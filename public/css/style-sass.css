@@ -9047,7 +9047,7 @@ Styleguide meta
 
 .meta--header {
   font-size: 0.889em;
-  margin: 0 0 0.15em; }
+  margin: 0 0 1em; }
 
 .meta .meta__item p, .meta .label--meta p {
   font-size: inherit !important;
