@@ -19,6 +19,7 @@
 <script src="public/js/jquery.ui.core.min.js"></script>
 <script src="public/js/modernizr.js"></script>
 <script src="public/js/drupal.js"></script>
+<script src="public/js/scrollspy.js"></script>
 <script src="public/js/components/table-responsive.js"></script>
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
@@ -26,17 +27,11 @@
 <script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
+<script src="public/js/components/inpage_nav.js"></script>
+<script src="public/js/europa.js"></script>
 
   <script src="kss-assets/kss.js"></script>
-  <script src="kss-assets/scrollspy.js"></script>
   <script src="kss-assets/prettify.js"></script>
-  <script>
-    prettyPrint();
-    /* var spy = new ScrollSpy('#kss-node', {
-      nav: '.kss-nav__menu-child > li > a',
-      className: 'is-in-viewport' 
-    }); */
-  </script>
   <script>
     jQuery(document).ready(function() {
       jQuery('.hide-menu').click(function() {
@@ -314,6 +309,22 @@
           <div class="kss-modifier__example">
             <div class="timeline">
   <div class="timeline__item">
+    <div class="timeline__item-title">By late-2013</div>
+    <div class="timeline__text">
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec tellus congue, pretium nibh eu, mattis ligula. Integer tempus varius enim ut scelerisque. Curabitur rutrum vestibulum elit ac pulvinar</li>
+      </ul>
+    </div>
+  </div>
+  <div class="timeline__item">
+    <div class="timeline__item-title">By late-2014</div>
+    <div class="timeline__text">
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec tellus congue, pretium nibh eu, mattis ligula. Integer tempus varius enim ut scelerisque. Curabitur rutrum vestibulum elit ac pulvinar</li>
+      </ul>
+    </div>
+  </div>
+  <div class="timeline__item">
     <div class="timeline__item-title">By late-2015</div>
     <div class="timeline__text">
       <ul>
@@ -321,8 +332,23 @@
       </ul>
     </div>
   </div>
+  <div class="timeline__item">
+    <div class="timeline__item-title">By late-2016</div>
+    <div class="timeline__text">
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec tellus congue, pretium nibh eu, mattis ligula. Integer tempus varius enim ut scelerisque. Curabitur rutrum vestibulum elit ac pulvinar</li>
+      </ul>
+    </div>
+  </div>
+  <div class="timeline__item">
+    <div class="timeline__item-title">By late-2017</div>
+    <div class="timeline__text">
+      <ul>
+        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec tellus congue, pretium nibh eu, mattis ligula. Integer tempus varius enim ut scelerisque. Curabitur rutrum vestibulum elit ac pulvinar</li>
+      </ul>
+    </div>
+  </div>
   <div class="timeline__footer">
-    <button class="btn btn-time-line">Show all timeline</button>
   </div>
 </div>
 
@@ -333,6 +359,22 @@
           <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;timeline&quot;&gt;
   &lt;div class&#x3D;&quot;timeline__item&quot;&gt;
+    &lt;div class&#x3D;&quot;timeline__item-title&quot;&gt;By late-2013&lt;/div&gt;
+    &lt;div class&#x3D;&quot;timeline__text&quot;&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec tellus congue, pretium nibh eu, mattis ligula. Integer tempus varius enim ut scelerisque. Curabitur rutrum vestibulum elit ac pulvinar&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;timeline__item&quot;&gt;
+    &lt;div class&#x3D;&quot;timeline__item-title&quot;&gt;By late-2014&lt;/div&gt;
+    &lt;div class&#x3D;&quot;timeline__text&quot;&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec tellus congue, pretium nibh eu, mattis ligula. Integer tempus varius enim ut scelerisque. Curabitur rutrum vestibulum elit ac pulvinar&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;timeline__item&quot;&gt;
     &lt;div class&#x3D;&quot;timeline__item-title&quot;&gt;By late-2015&lt;/div&gt;
     &lt;div class&#x3D;&quot;timeline__text&quot;&gt;
       &lt;ul&gt;
@@ -340,8 +382,23 @@
       &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
+  &lt;div class&#x3D;&quot;timeline__item&quot;&gt;
+    &lt;div class&#x3D;&quot;timeline__item-title&quot;&gt;By late-2016&lt;/div&gt;
+    &lt;div class&#x3D;&quot;timeline__text&quot;&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec tellus congue, pretium nibh eu, mattis ligula. Integer tempus varius enim ut scelerisque. Curabitur rutrum vestibulum elit ac pulvinar&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class&#x3D;&quot;timeline__item&quot;&gt;
+    &lt;div class&#x3D;&quot;timeline__item-title&quot;&gt;By late-2017&lt;/div&gt;
+    &lt;div class&#x3D;&quot;timeline__text&quot;&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec tellus congue, pretium nibh eu, mattis ligula. Integer tempus varius enim ut scelerisque. Curabitur rutrum vestibulum elit ac pulvinar&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
   &lt;div class&#x3D;&quot;timeline__footer&quot;&gt;
-    &lt;button class&#x3D;&quot;btn btn-time-line&quot;&gt;Show all timeline&lt;/button&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
