@@ -12,11 +12,15 @@
   <link rel="stylesheet" href="public/css/style-sass-base.css">
 <link rel="stylesheet" href="public/css/style-sass-components.css">
 <link rel="stylesheet" href="public/css/europa_styleguide.css">
+<link rel="stylesheet" href="public/css/jquery.ui.core.min.css">
+<link rel="stylesheet" href="public/css/jquery.ui.datepicker.min.css">
 
   <!-- SCRIPTS -->
   <script src="public/js/jquery-1.9.1.min.js"></script>
 <script src="public/js/jquery.once.js"></script>
 <script src="public/js/jquery.ui.core.min.js"></script>
+<script src="public/js/datepicker/jquery.ui.datepicker.min.js"></script>
+<script src="public/js/datepicker/datepicker.js"></script>
 <script src="public/js/modernizr.js"></script>
 <script src="public/js/drupal.js"></script>
 <script src="public/js/scrollspy.js"></script>
@@ -313,30 +317,20 @@ The CSS applied from style guide is an override over the default CSS of jQuery U
           </div>
 
           <div class="kss-modifier__example">
-            <script src="public/js/components/datepicker/jquery.ui.datepicker.min.js"></script>
-<script src="public/js/components/datepicker/datepicker.js"></script>
-<link rel="stylesheet" href="public/css/jquery.ui.core.min.css">
-<link rel="stylesheet" href="public/css/jquery.ui.datepicker.min.css">
-
-<label for="datepicker">Date:</label>
+            <label for="datepicker">Date:</label>
 <div class="date-picker">
   <input class="form-control" type="text" id="datepicker">
-  <span class="icon icon--calendar"></span>
+  <span class="icon icon--calendar date-picker--icon"></span>
 </div>
 
           </div>
 
         </div>
           <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;script src&#x3D;&quot;public/js/components/datepicker/jquery.ui.datepicker.min.js&quot;&gt;&lt;/script&gt;
-&lt;script src&#x3D;&quot;public/js/components/datepicker/datepicker.js&quot;&gt;&lt;/script&gt;
-&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;public/css/jquery.ui.core.min.css&quot;&gt;
-&lt;link rel&#x3D;&quot;stylesheet&quot; href&#x3D;&quot;public/css/jquery.ui.datepicker.min.css&quot;&gt;
-
-&lt;label for&#x3D;&quot;datepicker&quot;&gt;Date:&lt;/label&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label for&#x3D;&quot;datepicker&quot;&gt;Date:&lt;/label&gt;
 &lt;div class&#x3D;&quot;date-picker&quot;&gt;
   &lt;input class&#x3D;&quot;form-control&quot; type&#x3D;&quot;text&quot; id&#x3D;&quot;datepicker&quot;&gt;
-  &lt;span class&#x3D;&quot;icon icon--calendar&quot;&gt;&lt;/span&gt;
+  &lt;span class&#x3D;&quot;icon icon--calendar date-picker--icon&quot;&gt;&lt;/span&gt;
 &lt;/div&gt;
 </code></pre>
           </div>
