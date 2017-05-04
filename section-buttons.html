@@ -31,6 +31,7 @@
 <script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
+<script src="public/js/components/transition.js"></script>
 <script src="public/js/components/inpage_nav.js"></script>
 <script src="public/js/europa.js"></script>
 
@@ -354,6 +355,7 @@
           <div class="kss-modifier__example">
             <a href="#" class="btn ">Link button</a>
 <a href="http://example.com" class="btn ">External link button</a>
+<a href="http://example.com" class="btn ">External link button with extra long copy to test white-space normal</a>
 <button class="btn ">Button element</button>
 <input type="button" class="btn " value="input[type='button']"/>
 
@@ -368,6 +370,7 @@
             <div class="kss-modifier__example">
               <a href="#" class="btn btn-default">Link button</a>
 <a href="http://example.com" class="btn btn-default">External link button</a>
+<a href="http://example.com" class="btn btn-default">External link button with extra long copy to test white-space normal</a>
 <button class="btn btn-default">Button element</button>
 <input type="button" class="btn btn-default" value="input[type='button']"/>
 
@@ -381,6 +384,7 @@
             <div class="kss-modifier__example">
               <a href="#" class="btn btn-primary">Link button</a>
 <a href="http://example.com" class="btn btn-primary">External link button</a>
+<a href="http://example.com" class="btn btn-primary">External link button with extra long copy to test white-space normal</a>
 <button class="btn btn-primary">Button element</button>
 <input type="button" class="btn btn-primary" value="input[type='button']"/>
 
@@ -394,6 +398,7 @@
             <div class="kss-modifier__example">
               <a href="#" class="btn btn-secondary">Link button</a>
 <a href="http://example.com" class="btn btn-secondary">External link button</a>
+<a href="http://example.com" class="btn btn-secondary">External link button with extra long copy to test white-space normal</a>
 <button class="btn btn-secondary">Button element</button>
 <input type="button" class="btn btn-secondary" value="input[type='button']"/>
 
@@ -407,21 +412,9 @@
             <div class="kss-modifier__example">
               <a href="#" class="btn btn-ctn">Link button</a>
 <a href="http://example.com" class="btn btn-ctn">External link button</a>
+<a href="http://example.com" class="btn btn-ctn">External link button with extra long copy to test white-space normal</a>
 <button class="btn btn-ctn">Button element</button>
 <input type="button" class="btn btn-ctn" value="input[type='button']"/>
-
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .btn-ctn--border
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Button call to action with border
-            </div>
-            <div class="kss-modifier__example">
-              <a href="#" class="btn btn-ctn--border">Link button</a>
-<a href="http://example.com" class="btn btn-ctn--border">External link button</a>
-<button class="btn btn-ctn--border">Button element</button>
-<input type="button" class="btn btn-ctn--border" value="input[type='button']"/>
 
             </div>
             <div class="kss-modifier__name kss-style">
@@ -433,6 +426,7 @@
             <div class="kss-modifier__example">
               <a href="#" class="btn btn-menu">Link button</a>
 <a href="http://example.com" class="btn btn-menu">External link button</a>
+<a href="http://example.com" class="btn btn-menu">External link button with extra long copy to test white-space normal</a>
 <button class="btn btn-menu">Button element</button>
 <input type="button" class="btn btn-menu" value="input[type='button']"/>
 
@@ -441,6 +435,7 @@
           <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn [modifier class]&quot;&gt;Link button&lt;/a&gt;
 &lt;a href&#x3D;&quot;http://example.com&quot; class&#x3D;&quot;btn [modifier class]&quot;&gt;External link button&lt;/a&gt;
+&lt;a href&#x3D;&quot;http://example.com&quot; class&#x3D;&quot;btn [modifier class]&quot;&gt;External link button with extra long copy to test white-space normal&lt;/a&gt;
 &lt;button class&#x3D;&quot;btn [modifier class]&quot;&gt;Button element&lt;/button&gt;
 &lt;input type&#x3D;&quot;button&quot; class&#x3D;&quot;btn [modifier class]&quot; value&#x3D;&quot;input[type&#x3D;&#x27;button&#x27;]&quot;/&gt;
 </code></pre>
@@ -516,7 +511,7 @@
           <div class="kss-modifier__example">
             <button class="btn btn-default btn-block">Button Element</button>
 <button class="btn btn-default btn-block">Button Element</button>
-<button class="btn btn-default btn-block">Button Element</button>
+<button class="btn btn-default btn-block">Button Element with extra long copy to test white-space normal</button>
 
           </div>
 
@@ -524,7 +519,7 @@
           <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class&#x3D;&quot;btn btn-default btn-block&quot;&gt;Button Element&lt;/button&gt;
 &lt;button class&#x3D;&quot;btn btn-default btn-block&quot;&gt;Button Element&lt;/button&gt;
-&lt;button class&#x3D;&quot;btn btn-default btn-block&quot;&gt;Button Element&lt;/button&gt;
+&lt;button class&#x3D;&quot;btn btn-default btn-block&quot;&gt;Button Element with extra long copy to test white-space normal&lt;/button&gt;
 </code></pre>
           </div>
 
@@ -557,27 +552,49 @@
           </div>
 
           <div class="kss-modifier__example">
-            <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapse-example" aria-expanded="false" aria-controls="collapse-example">
-  show/hide #collapse-example
-</button>
+            <div> <!-- only required for the style guide -->
+  <button class="btn btn-collapse " type="button" data-toggle="collapse" data-target="#collapse-example-1" aria-expanded="false" aria-controls="collapse-example">
+    show/hide #collapse-example 1
+  </button>
+  <div id="collapse-example-1" class="collapse">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+  </div>
+</div>
 
-<button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapse-example" aria-expanded="false" aria-controls="collapse-example">
-  <span class="toggling-text">show/hide #collapse-example</span>
-  <i class="icon icon--blue-dark icon--down"></i>
-</button>
+<div> <!-- only required for the style guide -->
+  <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapse-example-2" aria-expanded="false" aria-controls="collapse-example">
+    show/hide #collapse-example 2<i class="icon icon--blue-dark icon--down"></i>
+  </button>
+  <div id="collapse-example-2" class="collapse">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+  </div>
+</div>
 
           </div>
 
         </div>
           <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class&#x3D;&quot;btn btn-collapse&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#collapse-example&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapse-example&quot;&gt;
-  show/hide #collapse-example
-&lt;/button&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div&gt; &lt;!-- only required for the style guide --&gt;
+  &lt;button class&#x3D;&quot;btn btn-collapse &quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#collapse-example-1&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapse-example&quot;&gt;
+    show/hide #collapse-example 1
+  &lt;/button&gt;
+  &lt;div id&#x3D;&quot;collapse-example-1&quot; class&#x3D;&quot;collapse&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+    &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;button class&#x3D;&quot;btn btn-collapse&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#collapse-example&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapse-example&quot;&gt;
-  &lt;span class&#x3D;&quot;toggling-text&quot;&gt;show/hide #collapse-example&lt;/span&gt;
-  &lt;i class&#x3D;&quot;icon icon--blue-dark icon--down&quot;&gt;&lt;/i&gt;
-&lt;/button&gt;
+&lt;div&gt; &lt;!-- only required for the style guide --&gt;
+  &lt;button class&#x3D;&quot;btn btn-collapse collapsed&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#collapse-example-2&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapse-example&quot;&gt;
+    show/hide #collapse-example 2&lt;i class&#x3D;&quot;icon icon--blue-dark icon--down&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;div id&#x3D;&quot;collapse-example-2&quot; class&#x3D;&quot;collapse&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+    &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
           </div>
 
@@ -652,7 +669,7 @@
             <div class="btn-group ">
   <a href="#" class="btn btn-primary">Button primary</a>
   <a href="#" class="btn btn-default">Button default</a>
-  <a href="#" class="btn btn-default">Button default</a>
+  <a href="#" class="btn btn-default">Button default with extra long copy to test white-space normal</a>
   <a href="#" class="btn btn-default">Button default</a>
 </div>
 
@@ -668,7 +685,7 @@
               <div class="btn-group btn-group-row-two">
   <a href="#" class="btn btn-primary">Button primary</a>
   <a href="#" class="btn btn-default">Button default</a>
-  <a href="#" class="btn btn-default">Button default</a>
+  <a href="#" class="btn btn-default">Button default with extra long copy to test white-space normal</a>
   <a href="#" class="btn btn-default">Button default</a>
 </div>
 
@@ -678,7 +695,7 @@
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;btn-group [modifier class]&quot;&gt;
   &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Button primary&lt;/a&gt;
   &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Button default&lt;/a&gt;
-  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Button default&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Button default with extra long copy to test white-space normal&lt;/a&gt;
   &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-default&quot;&gt;Button default&lt;/a&gt;
 &lt;/div&gt;
 </code></pre>

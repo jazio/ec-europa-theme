@@ -31,6 +31,7 @@
 <script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
+<script src="public/js/components/transition.js"></script>
 <script src="public/js/components/inpage_nav.js"></script>
 <script src="public/js/europa.js"></script>
 
@@ -326,7 +327,7 @@ The following example is a general one, using &quot;Section&quot; styling.</p>
     <!-- Title with additional text, links, and grandchilds section item. -->
     <div class="section__item">
       <div class="listing listing--navigation">
-        <a href="#" class="listing__item-link"></a>
+        <a href="#" class="listing__item-link" title="Title with additional text, links and grandchilds"></a>
         <h2 class="listing__section-title">Title with additional text, links and grandchilds</h2>
         <p class="listing__description">This is the description. EU strategy, its role in setting priorities, and its implementation through EU policy.</p>
         <div class="listing__item">
@@ -356,7 +357,7 @@ The following example is a general one, using &quot;Section&quot; styling.</p>
     <!-- Title with additional text section item. -->
     <div class="section__item">
       <div class="listing listing--navigation">
-        <a class="listing__item-link" href="#"></a>
+        <a href="#" class="listing__item-link" title="Title with additional text"></a>
         <h2 class="listing__section-title">Title with additional text</h2>
         <p class="listing__description">Information on the annual budget life-cycle.</p>
       </div>
@@ -364,7 +365,7 @@ The following example is a general one, using &quot;Section&quot; styling.</p>
     <!-- Title with additional text, links, without any grandchild section item. -->
     <div class="section__item">
       <div class="listing listing--navigation">
-        <a href="#" class="listing__item-link"></a>
+        <a href="#" class="listing__item-link" title="Title with additional text, links and grandchilds"></a>
         <h2 class="listing__section-title">Title with additional text, links and grandchilds</h2>
         <div class="listing__item">
           <a href="#" class="listing__title" title="Introduction to EU law">Introduction to EU law</a>
@@ -392,7 +393,7 @@ The following example is a general one, using &quot;Section&quot; styling.</p>
     &lt;!-- Title with additional text, links, and grandchilds section item. --&gt;
     &lt;div class&#x3D;&quot;section__item&quot;&gt;
       &lt;div class&#x3D;&quot;listing listing--navigation&quot;&gt;
-        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot;&gt;&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot; title&#x3D;&quot;Title with additional text, links and grandchilds&quot;&gt;&lt;/a&gt;
         &lt;h2 class&#x3D;&quot;listing__section-title&quot;&gt;Title with additional text, links and grandchilds&lt;/h2&gt;
         &lt;p class&#x3D;&quot;listing__description&quot;&gt;This is the description. EU strategy, its role in setting priorities, and its implementation through EU policy.&lt;/p&gt;
         &lt;div class&#x3D;&quot;listing__item&quot;&gt;
@@ -422,7 +423,7 @@ The following example is a general one, using &quot;Section&quot; styling.</p>
     &lt;!-- Title with additional text section item. --&gt;
     &lt;div class&#x3D;&quot;section__item&quot;&gt;
       &lt;div class&#x3D;&quot;listing listing--navigation&quot;&gt;
-        &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;#&quot;&gt;&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot; title&#x3D;&quot;Title with additional text&quot;&gt;&lt;/a&gt;
         &lt;h2 class&#x3D;&quot;listing__section-title&quot;&gt;Title with additional text&lt;/h2&gt;
         &lt;p class&#x3D;&quot;listing__description&quot;&gt;Information on the annual budget life-cycle.&lt;/p&gt;
       &lt;/div&gt;
@@ -430,7 +431,7 @@ The following example is a general one, using &quot;Section&quot; styling.</p>
     &lt;!-- Title with additional text, links, without any grandchild section item. --&gt;
     &lt;div class&#x3D;&quot;section__item&quot;&gt;
       &lt;div class&#x3D;&quot;listing listing--navigation&quot;&gt;
-        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot;&gt;&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot; title&#x3D;&quot;Title with additional text, links and grandchilds&quot;&gt;&lt;/a&gt;
         &lt;h2 class&#x3D;&quot;listing__section-title&quot;&gt;Title with additional text, links and grandchilds&lt;/h2&gt;
         &lt;div class&#x3D;&quot;listing__item&quot;&gt;
           &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Introduction to EU law&quot;&gt;Introduction to EU law&lt;/a&gt;

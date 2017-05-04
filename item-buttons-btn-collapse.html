@@ -31,6 +31,7 @@
 <script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
+<script src="public/js/components/transition.js"></script>
 <script src="public/js/components/inpage_nav.js"></script>
 <script src="public/js/europa.js"></script>
 
@@ -320,27 +321,49 @@
           </div>
 
           <div class="kss-modifier__example">
-            <button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapse-example" aria-expanded="false" aria-controls="collapse-example">
-  show/hide #collapse-example
-</button>
+            <div> <!-- only required for the style guide -->
+  <button class="btn btn-collapse " type="button" data-toggle="collapse" data-target="#collapse-example-1" aria-expanded="false" aria-controls="collapse-example">
+    show/hide #collapse-example 1
+  </button>
+  <div id="collapse-example-1" class="collapse">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+  </div>
+</div>
 
-<button class="btn btn-collapse" type="button" data-toggle="collapse" data-target="#collapse-example" aria-expanded="false" aria-controls="collapse-example">
-  <span class="toggling-text">show/hide #collapse-example</span>
-  <i class="icon icon--blue-dark icon--down"></i>
-</button>
+<div> <!-- only required for the style guide -->
+  <button class="btn btn-collapse collapsed" type="button" data-toggle="collapse" data-target="#collapse-example-2" aria-expanded="false" aria-controls="collapse-example">
+    show/hide #collapse-example 2<i class="icon icon--blue-dark icon--down"></i>
+  </button>
+  <div id="collapse-example-2" class="collapse">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...</p>
+  </div>
+</div>
 
           </div>
 
         </div>
           <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button class&#x3D;&quot;btn btn-collapse&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#collapse-example&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapse-example&quot;&gt;
-  show/hide #collapse-example
-&lt;/button&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div&gt; &lt;!-- only required for the style guide --&gt;
+  &lt;button class&#x3D;&quot;btn btn-collapse &quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#collapse-example-1&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapse-example&quot;&gt;
+    show/hide #collapse-example 1
+  &lt;/button&gt;
+  &lt;div id&#x3D;&quot;collapse-example-1&quot; class&#x3D;&quot;collapse&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+    &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;button class&#x3D;&quot;btn btn-collapse&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#collapse-example&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapse-example&quot;&gt;
-  &lt;span class&#x3D;&quot;toggling-text&quot;&gt;show/hide #collapse-example&lt;/span&gt;
-  &lt;i class&#x3D;&quot;icon icon--blue-dark icon--down&quot;&gt;&lt;/i&gt;
-&lt;/button&gt;
+&lt;div&gt; &lt;!-- only required for the style guide --&gt;
+  &lt;button class&#x3D;&quot;btn btn-collapse collapsed&quot; type&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; data-target&#x3D;&quot;#collapse-example-2&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapse-example&quot;&gt;
+    show/hide #collapse-example 2&lt;i class&#x3D;&quot;icon icon--blue-dark icon--down&quot;&gt;&lt;/i&gt;
+  &lt;/button&gt;
+  &lt;div id&#x3D;&quot;collapse-example-2&quot; class&#x3D;&quot;collapse&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;
+    &lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
           </div>
 
