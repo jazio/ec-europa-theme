@@ -5,6 +5,7 @@
  * Contains component file.
  */
 ?>
+<header class="ecl-headers" role="banner">
   <div class="ecl-container">
     <?php print render($logo); ?>
     <?php print render($site_slogan); ?>
@@ -16,3 +17,4 @@
       </div>
     </section>
   </div>
+</header>
