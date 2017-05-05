@@ -93,6 +93,7 @@
 </section>
 <?php endif; ?>
 
+<header class="ecl-headers" role="banner">
 <?php print render($site_header); ?>
 
 <?php if (!empty($page['header_bottom'])): ?>
@@ -131,6 +132,7 @@
     </div>
   </section>
 <?php endif; ?>
+  </header>
 
 <?php if (!empty($page['utility'])): ?>
   <div class="utility">

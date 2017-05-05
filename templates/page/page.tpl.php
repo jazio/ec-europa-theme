@@ -95,7 +95,7 @@
 </section>
 <?php endif; ?>
 
-<header class="site-header" role="banner">
+<header class="ecl-headers" role="banner">
  <?php print render($site_header); ?>
  <?php print render($page['header']); ?>
 </header>
