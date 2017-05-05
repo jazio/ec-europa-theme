@@ -90,15 +90,15 @@
 
   <a id="main-content" tabindex="-1"></a>
 
-  <header class="site-header splash-page__site-header" role="banner">
-    <div class="container">
+  <header class="ecl-headers" role="banner">
+    <div class="ecl-container">
       <span class="<?php print $logo_classes; ?>"></span>
     </div>
   </header>
 
   <div class="page-content splash-page__content">
-    <div class="container">
-      <div class="row">
+    <div class="ecl-container">
+      <div class="ecl-row">
         <div class="ecl-col-md-8 col-md-offset-2">
           <?php print render($page['content']); ?>
         </div>

@@ -13,7 +13,7 @@ function europa_atomium_theme_logo() {
     'logo' => array(
       'template' => 'logo',
       'variables' => array(
-        'page_logo_title' => t('Home'),
+        'page_logo_title' => NULL,
       ),
     ),
   );
@@ -26,7 +26,9 @@ function europa_atomium_definition_logo() {
   return array(
     'label' => 'Logo',
     'description' => 'Logo.',
-    'preview' => array(),
+    'preview' => array(
+      'page_logo_title' => t('Home'),
+    ),
   );
 }
 

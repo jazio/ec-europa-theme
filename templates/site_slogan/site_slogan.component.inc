@@ -11,10 +11,10 @@
 function europa_atomium_theme_site_slogan() {
   return array(
     'site_slogan' => array(
+      'template' => 'site-slogan',
       'variables' => array(
         'markup' => NULL,
       ),
-      'template' => 'site-slogan',
     ),
   );
 }
@@ -27,7 +27,10 @@ function europa_atomium_definition_site_slogan() {
     'label' => 'Site slogan',
     'description' => 'Site slogan.',
     'preview' => array(
-      'markup' => 'European Union because simple is better!',
+      'markup' =>
+        array(
+          '#markup' => 'European Union because simple is better!',
+        ),
     ),
   );
 }
@@ -36,9 +39,13 @@ function europa_atomium_definition_site_slogan() {
  * Implements hook_preprocess_HOOK().
  */
 function europa_preprocess_site_slogan(&$variables, $hook) {
-  $variables[$hook] = array(
-    $hook => array(
-      '#markup' => $variables['markup'],
-    ),
-  );
+  if (drupal_is_front_page() && !empty(variable_get('site_slogan'))) {
+    $variables['markup'] = array(
+      'element' => array(
+        '#type' => 'html_tag',
+        '#tag' => 'p',
+        '#value' => variable_get('site_slogan'),
+      ),
+    );
+  }
 }
