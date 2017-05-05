@@ -29,3 +29,11 @@ function europa_atomium_definition_logo() {
     'preview' => array(),
   );
 }
+
+/**
+ * Implements hook_preprocess_logo().
+ */
+function europa_preprocess_logo(&$variables) {
+  global $base_url;
+  $variables['link'] = $base_url;
+}

@@ -31,16 +31,22 @@ function europa_atomium_definition_expandable() {
       'title' => 'A expandable row template',
       'rows' => array(
         array(
-          'Title line 1',
-          'Text block first Line 1'
+          'title' => 'Title line 1',
+          'body' => 'Text block first Line 1',
+          'id' => 'test1',
+          'icon' => 'icon icon--yellowbg icon--growth',
         ),
         array(
-          'Title line 2.',
-          'Text block  line 2.'
+          'title' => 'Title line 2.',
+          'body' => 'Text block  line 2.',
+          'id' => 'test2',
+          'icon' => 'icon icon--yellowbg icon--energy',
         ),
         array(
           'Title line 3.',
-          'Text block  last line 3.'
+          'Text block  last line 3.',
+          'id' => 'test3',
+           'icon' => 'icon icon--yellowbg icon--digital',
         ),
       ),
     ),

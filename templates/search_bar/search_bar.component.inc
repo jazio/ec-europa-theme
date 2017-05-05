@@ -26,5 +26,6 @@ function europa_atomium_definition_search_bar() {
   return array(
     'label' => 'Site search bar',
     'description' => 'Site search bar.',
+    'preview' => array(),
   );
 }

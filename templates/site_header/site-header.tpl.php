@@ -5,7 +5,7 @@
  * Contains component file.
  */
 ?>
-  <div class="container-fluid site-header__container">
+  <div class="ecl-container">
     <?php print render($logo); ?>
     <?php print render($site_slogan); ?>
     <section class="top-bar" aria-label="Site tools">
@@ -13,9 +13,6 @@
         <?php print render($lang_select_site); ?>
         <?php print render($search_bar); ?>
          <h1 class="sr-only"><?php print $site_name; ?></h1>
-        <section class="site-menu__toggle">
-          <button class="btn btn-menu"><?php print $menu_str; ?></button>
-        </section>
       </div>
     </section>
   </div>

@@ -5,4 +5,4 @@
  * Contains template file.
  */
 ?>
-<h2 class="site-slogan"><?php print render($site_slogan); ?></h2>
+<h2 class="ecl-h2 ecl-text-center" style="clear: left"><?php print render($site_slogan); ?></h2>
