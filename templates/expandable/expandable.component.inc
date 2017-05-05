@@ -12,7 +12,6 @@ function europa_atomium_theme_expandable() {
   return array(
     'expandable' => array(
       'variables' => array(
-        'title' => NULL,
         'rows' => NULL,
       ),
       'template' => 'expandable',
@@ -28,7 +27,6 @@ function europa_atomium_definition_expandable() {
     'label' => 'Expandable',
     'description' => 'Expandable layout.',
     'preview' => array(
-      'title' => 'A expandable row template',
       'rows' => array(
         array(
           'title' => 'Title line 1',
@@ -43,10 +41,10 @@ function europa_atomium_definition_expandable() {
           'icon' => 'icon icon--yellowbg icon--energy',
         ),
         array(
-          'Title line 3.',
-          'Text block  last line 3.',
+          'title' => 'Title line 3.',
+          'body' => 'Text block  last line 3.',
           'id' => 'test3',
-           'icon' => 'icon icon--yellowbg icon--digital',
+          'icon' => 'icon icon--yellowbg icon--digital',
         ),
       ),
     ),
