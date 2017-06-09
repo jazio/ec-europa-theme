@@ -13,17 +13,27 @@
 <link rel="stylesheet" href="public/css/style-sass-components.css">
 <link rel="stylesheet" href="public/css/europa_styleguide.css">
 <link rel="stylesheet" href="public/css/jquery.ui.core.min.css">
-<link rel="stylesheet" href="public/css/jquery.ui.datepicker.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.datepicker.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.button.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.resizable.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.dialog.min.css">
 
   <!-- SCRIPTS -->
   <script src="public/js/jquery-1.9.1.min.js"></script>
 <script src="public/js/jquery.once.js"></script>
 <script src="public/js/jquery.ui.core.min.js"></script>
-<script src="public/js/datepicker/jquery.ui.datepicker.min.js"></script>
-<script src="public/js/datepicker/datepicker.js"></script>
 <script src="public/js/modernizr.js"></script>
 <script src="public/js/drupal.js"></script>
 <script src="public/js/scrollspy.js"></script>
+<script src="public/js/jquery.ui.widget.min.js"></script>
+<script src="public/js/jquery.ui.mouse.min.js"></script>
+<script src="public/js/jquery.ui.draggable.min.js"></script>
+<script src="public/js/jquery.ui.position.min.js"></script>
+<script src="public/js/jquery.ui.resizable.min.js"></script>
+<script src="public/js/components/datepicker/jquery.ui.datepicker.min.js"></script>
+<script src="public/js/components/datepicker/datepicker.js"></script>
+<script src="public/js/components/jquery.ui.button.min.js"></script>
+<script src="public/js/components/jquery.ui.dialog.min.js"></script>
 <script src="public/js/components/table-responsive.js"></script>
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
@@ -595,10 +605,27 @@ is displayed multimedia files (image and video).</p>
             <div class="file file--link">
   <span class="file__icon icon icon--file-link"></span>
   <div class="file__metadata--link">
-    <a class="file__title" href="http://ext.link" title="file title">
-      Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-    </a>
+    <a class="file__title" href="http://ext.link" title="file title">Generic external file link</a>
   </div>
+</div>
+
+<div class="file file--link">
+  <span class="file__icon icon icon--file-link"></span>
+  <div class="file__metadata--link">
+    <a class="file__title is-internal" href="http://ext.link" title="file title">Generic file link</a>
+  </div>
+</div>
+
+<div class="file file--link">
+  <a class="file__title is-internal" href="http://ext.link.pdf" title="file title">Link to a .pdf file</a>
+</div>
+
+<div class="file file--link">
+  <a class="file__title is-internal" href="http://ext.link.ppt" title="file title">Link to a presentation file (.ppt)</a>
+</div>
+
+<div class="file file--link">
+  <a class="file__title is-internal" href="http://ext.link.jpg" title="file title">Link to a .jpg image file</a>
 </div>
 
           </div>
@@ -608,10 +635,27 @@ is displayed multimedia files (image and video).</p>
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;file file--link&quot;&gt;
   &lt;span class&#x3D;&quot;file__icon icon icon--file-link&quot;&gt;&lt;/span&gt;
   &lt;div class&#x3D;&quot;file__metadata--link&quot;&gt;
-    &lt;a class&#x3D;&quot;file__title&quot; href&#x3D;&quot;http://ext.link&quot; title&#x3D;&quot;file title&quot;&gt;
-      Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor
-    &lt;/a&gt;
+    &lt;a class&#x3D;&quot;file__title&quot; href&#x3D;&quot;http://ext.link&quot; title&#x3D;&quot;file title&quot;&gt;Generic external file link&lt;/a&gt;
   &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;file file--link&quot;&gt;
+  &lt;span class&#x3D;&quot;file__icon icon icon--file-link&quot;&gt;&lt;/span&gt;
+  &lt;div class&#x3D;&quot;file__metadata--link&quot;&gt;
+    &lt;a class&#x3D;&quot;file__title is-internal&quot; href&#x3D;&quot;http://ext.link&quot; title&#x3D;&quot;file title&quot;&gt;Generic file link&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;file file--link&quot;&gt;
+  &lt;a class&#x3D;&quot;file__title is-internal&quot; href&#x3D;&quot;http://ext.link.pdf&quot; title&#x3D;&quot;file title&quot;&gt;Link to a .pdf file&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;file file--link&quot;&gt;
+  &lt;a class&#x3D;&quot;file__title is-internal&quot; href&#x3D;&quot;http://ext.link.ppt&quot; title&#x3D;&quot;file title&quot;&gt;Link to a presentation file (.ppt)&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;file file--link&quot;&gt;
+  &lt;a class&#x3D;&quot;file__title is-internal&quot; href&#x3D;&quot;http://ext.link.jpg&quot; title&#x3D;&quot;file title&quot;&gt;Link to a .jpg image file&lt;/a&gt;
 &lt;/div&gt;
 </code></pre>
           </div>

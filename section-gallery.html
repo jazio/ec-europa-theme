@@ -13,17 +13,27 @@
 <link rel="stylesheet" href="public/css/style-sass-components.css">
 <link rel="stylesheet" href="public/css/europa_styleguide.css">
 <link rel="stylesheet" href="public/css/jquery.ui.core.min.css">
-<link rel="stylesheet" href="public/css/jquery.ui.datepicker.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.datepicker.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.button.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.resizable.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.dialog.min.css">
 
   <!-- SCRIPTS -->
   <script src="public/js/jquery-1.9.1.min.js"></script>
 <script src="public/js/jquery.once.js"></script>
 <script src="public/js/jquery.ui.core.min.js"></script>
-<script src="public/js/datepicker/jquery.ui.datepicker.min.js"></script>
-<script src="public/js/datepicker/datepicker.js"></script>
 <script src="public/js/modernizr.js"></script>
 <script src="public/js/drupal.js"></script>
 <script src="public/js/scrollspy.js"></script>
+<script src="public/js/jquery.ui.widget.min.js"></script>
+<script src="public/js/jquery.ui.mouse.min.js"></script>
+<script src="public/js/jquery.ui.draggable.min.js"></script>
+<script src="public/js/jquery.ui.position.min.js"></script>
+<script src="public/js/jquery.ui.resizable.min.js"></script>
+<script src="public/js/components/datepicker/jquery.ui.datepicker.min.js"></script>
+<script src="public/js/components/datepicker/datepicker.js"></script>
+<script src="public/js/components/jquery.ui.button.min.js"></script>
+<script src="public/js/components/jquery.ui.dialog.min.js"></script>
 <script src="public/js/components/table-responsive.js"></script>
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
@@ -142,6 +152,14 @@
         <a class="kss-nav__menu-link" href="section-gallery.html">
           <span class="kss-nav__ref">15</span><span class="kss-nav__name">Gallery</span>
         </a>
+            <ul class="kss-nav__menu-child">
+              <li class="kss-nav__menu-item">
+                <a class="kss-nav__menu-link" href="section-gallery.html#kssref-gallery-overlay">
+                  <span class="kss-nav__ref ">15.1</span
+                  ><span class="kss-nav__name">Gallery Overlay</span>
+                </a>
+              </li>
+            </ul>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-hero-links.html">
@@ -448,6 +466,275 @@
           </div>
 
     </div>
+    <section id="kssref-gallery-overlay" class="kss-section kss-section--depth-2">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-gallery-overlay">
+            <span class="kss-title__ref">
+              15.1
+              <span class="kss-title__permalink-hash">
+                  #gallery.overlay
+              </span>
+            </span>
+            Gallery Overlay
+          </a>
+        </h2>
+
+          <div class="kss-description">
+            <p>Gallery overlay component.</p>
+
+          </div>
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+          <div class="kss-modifier__example">
+            <button id="btn-gallery-overlay" class="btn btn-primary">
+  Gallery overlay <span class="icon icon--image"></span>
+</button>
+
+<!-- Modal -->
+<div id="gallery-overlay" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="gallery-overlay">
+    <div class="gallery-overlay__media">
+      <div class="gallery-overlay__media-previous">
+        <a href="#" title="Previous"><span class="sr-only">Previous</span></a>
+      </div>
+
+      <div class="gallery-overlay__media-item-list__wrapper">
+        <ul class="gallery-overlay__media-item-list">
+          <li class="gallery-overlay__media-item active">
+            <img class="img-responsive" src="http://lorempixel.com/600/1200/business" alt="">
+          </li>
+          <li class="gallery-overlay__media-item">
+            <img class="img-responsive" src="http://lorempixel.com/1200/620/business" alt="">
+          </li>
+          <li class="gallery-overlay__media-item">
+            <img class="img-responsive" src="http://lorempixel.com/800/800/business" alt="">
+          </li>
+          <li class="gallery-overlay__media-item">
+            <img class="img-responsive" src="http://lorempixel.com/960/1200/business" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <div class="gallery-overlay__media-next">
+        <a href="#" title="Next"><span class="sr-only">Next</span></a>
+      </div>
+    </div>
+
+    <div class="gallery-overlay__sidebar">
+      <div class="gallery-overlay__sidebar__content">
+        
+        <div class="gallery-overlay__meta">
+          <span class="gallery-overlay__count">2 / 15</span>
+          <span class="gallery-overlay__download">
+            <a href="#" title="Download">Download</a>
+          </span>
+          <span class="gallery-overlay__share">
+            <a href="#" title="Share">Share</a>
+          </span>
+        </div>
+
+        <div class="gallery-overlay__description">
+          <p>Nulla consequat massa quis enim. Donec pede justo.</p>
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Integer tincidunt. <a href="#" title="Cras dapibus">Cras dapibus</a>. Vivamus elementum semper nisi.</p>
+        </div>
+
+        <span class="gallery-overlay__copyright">
+          &copy; Copyright holder, Author name, License type
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  jQuery(function () {
+    jQuery('#gallery-overlay').dialog({
+      autoOpen: false,
+      resizable: false,
+      draggable: false,
+      modal: true,
+      fluid: true,
+      width: 'auto',
+      height: 'auto',
+      open: function (event) {
+        jQuery('.ui-widget-overlay').css('background-color', '#404040');
+        jQuery('.ui-widget-overlay').css({'filter': 'alpha(opacity=90)', 'zoom': '1', 'opacity': '0.9'});
+        jQuery('.ui-dialog').css('padding', '0');
+        jQuery('#gallery-overlay').css('padding', '0');
+        jQuery('.ui-dialog-title').css('display', 'none');
+        var $top_bar = jQuery(event.target).parent().find('.ui-dialog-titlebar');
+        $top_bar.addClass('gallery-overlay__close-wrapper');
+        $top_bar.find('button').addClass('gallery-overlay__close');
+        jQuery('body').css({overflow: 'hidden'});
+      },
+      beforeClose: function (event, ui) {
+        jQuery('body').css({overflow: 'inherit'})
+      }
+    });
+  });
+
+  jQuery('#btn-gallery-overlay').click(function (event) {
+    event.preventDefault();
+    jQuery('#gallery-overlay').dialog('open');
+  });
+
+  jQuery(window).resize(function () {
+    jQuery('#gallery-overlay').dialog('option', 'position', {my: 'center', at: 'center', of: window});
+  });
+
+  jQuery('.gallery-overlay__media-next a').click(function (event) {
+    event.preventDefault();
+    var index = jQuery(this).parent().prev().find('.active').index(),
+        $element = jQuery('.gallery-overlay__media-item');
+    if ($element.size() > index + 1) {
+      $element.eq(index).removeClass('active');
+      $element.eq(index + 1).addClass('active');
+    }
+  });
+
+  jQuery('.gallery-overlay__media-previous a').click(function (event) {
+    event.preventDefault();
+    var index = jQuery(this).parent().next().find('.active').index();
+    if (index > 0) {
+      var $element = jQuery('.gallery-overlay__media-item');
+      $element.eq(index).removeClass('active');
+      $element.eq(index - 1).addClass('active');
+    }
+  });
+</script>
+
+          </div>
+
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button id&#x3D;&quot;btn-gallery-overlay&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;
+  Gallery overlay &lt;span class&#x3D;&quot;icon icon--image&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div id&#x3D;&quot;gallery-overlay&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+  &lt;div class&#x3D;&quot;gallery-overlay&quot;&gt;
+    &lt;div class&#x3D;&quot;gallery-overlay__media&quot;&gt;
+      &lt;div class&#x3D;&quot;gallery-overlay__media-previous&quot;&gt;
+        &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Previous&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Previous&lt;/span&gt;&lt;/a&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;gallery-overlay__media-item-list__wrapper&quot;&gt;
+        &lt;ul class&#x3D;&quot;gallery-overlay__media-item-list&quot;&gt;
+          &lt;li class&#x3D;&quot;gallery-overlay__media-item active&quot;&gt;
+            &lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/600/1200/business&quot; alt&#x3D;&quot;&quot;&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;gallery-overlay__media-item&quot;&gt;
+            &lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/1200/620/business&quot; alt&#x3D;&quot;&quot;&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;gallery-overlay__media-item&quot;&gt;
+            &lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/800/800/business&quot; alt&#x3D;&quot;&quot;&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;gallery-overlay__media-item&quot;&gt;
+            &lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/960/1200/business&quot; alt&#x3D;&quot;&quot;&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;gallery-overlay__media-next&quot;&gt;
+        &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Next&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Next&lt;/span&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;gallery-overlay__sidebar&quot;&gt;
+      &lt;div class&#x3D;&quot;gallery-overlay__sidebar__content&quot;&gt;
+        
+        &lt;div class&#x3D;&quot;gallery-overlay__meta&quot;&gt;
+          &lt;span class&#x3D;&quot;gallery-overlay__count&quot;&gt;2 / 15&lt;/span&gt;
+          &lt;span class&#x3D;&quot;gallery-overlay__download&quot;&gt;
+            &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Download&quot;&gt;Download&lt;/a&gt;
+          &lt;/span&gt;
+          &lt;span class&#x3D;&quot;gallery-overlay__share&quot;&gt;
+            &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Share&quot;&gt;Share&lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;gallery-overlay__description&quot;&gt;
+          &lt;p&gt;Nulla consequat massa quis enim. Donec pede justo.&lt;/p&gt;
+          &lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Integer tincidunt. &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Cras dapibus&quot;&gt;Cras dapibus&lt;/a&gt;. Vivamus elementum semper nisi.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;span class&#x3D;&quot;gallery-overlay__copyright&quot;&gt;
+          &amp;copy; Copyright holder, Author name, License type
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  jQuery(function () {
+    jQuery(&#x27;#gallery-overlay&#x27;).dialog({
+      autoOpen: false,
+      resizable: false,
+      draggable: false,
+      modal: true,
+      fluid: true,
+      width: &#x27;auto&#x27;,
+      height: &#x27;auto&#x27;,
+      open: function (event) {
+        jQuery(&#x27;.ui-widget-overlay&#x27;).css(&#x27;background-color&#x27;, &#x27;#404040&#x27;);
+        jQuery(&#x27;.ui-widget-overlay&#x27;).css({&#x27;filter&#x27;: &#x27;alpha(opacity&#x3D;90)&#x27;, &#x27;zoom&#x27;: &#x27;1&#x27;, &#x27;opacity&#x27;: &#x27;0.9&#x27;});
+        jQuery(&#x27;.ui-dialog&#x27;).css(&#x27;padding&#x27;, &#x27;0&#x27;);
+        jQuery(&#x27;#gallery-overlay&#x27;).css(&#x27;padding&#x27;, &#x27;0&#x27;);
+        jQuery(&#x27;.ui-dialog-title&#x27;).css(&#x27;display&#x27;, &#x27;none&#x27;);
+        var $top_bar &#x3D; jQuery(event.target).parent().find(&#x27;.ui-dialog-titlebar&#x27;);
+        $top_bar.addClass(&#x27;gallery-overlay__close-wrapper&#x27;);
+        $top_bar.find(&#x27;button&#x27;).addClass(&#x27;gallery-overlay__close&#x27;);
+        jQuery(&#x27;body&#x27;).css({overflow: &#x27;hidden&#x27;});
+      },
+      beforeClose: function (event, ui) {
+        jQuery(&#x27;body&#x27;).css({overflow: &#x27;inherit&#x27;})
+      }
+    });
+  });
+
+  jQuery(&#x27;#btn-gallery-overlay&#x27;).click(function (event) {
+    event.preventDefault();
+    jQuery(&#x27;#gallery-overlay&#x27;).dialog(&#x27;open&#x27;);
+  });
+
+  jQuery(window).resize(function () {
+    jQuery(&#x27;#gallery-overlay&#x27;).dialog(&#x27;option&#x27;, &#x27;position&#x27;, {my: &#x27;center&#x27;, at: &#x27;center&#x27;, of: window});
+  });
+
+  jQuery(&#x27;.gallery-overlay__media-next a&#x27;).click(function (event) {
+    event.preventDefault();
+    var index &#x3D; jQuery(this).parent().prev().find(&#x27;.active&#x27;).index(),
+        $element &#x3D; jQuery(&#x27;.gallery-overlay__media-item&#x27;);
+    if ($element.size() &gt; index + 1) {
+      $element.eq(index).removeClass(&#x27;active&#x27;);
+      $element.eq(index + 1).addClass(&#x27;active&#x27;);
+    }
+  });
+
+  jQuery(&#x27;.gallery-overlay__media-previous a&#x27;).click(function (event) {
+    event.preventDefault();
+    var index &#x3D; jQuery(this).parent().next().find(&#x27;.active&#x27;).index();
+    if (index &gt; 0) {
+      var $element &#x3D; jQuery(&#x27;.gallery-overlay__media-item&#x27;);
+      $element.eq(index).removeClass(&#x27;active&#x27;);
+      $element.eq(index - 1).addClass(&#x27;active&#x27;);
+    }
+  });
+&lt;/script&gt;
+</code></pre>
+          </div>
+
+    </section>
 </article>
 
 

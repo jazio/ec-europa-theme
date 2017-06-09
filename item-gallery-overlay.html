@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Europa Style Guide</title>
+
+  <meta name="description" content="">
+  <meta name="generator" content="kss-node">
+  <meta name="viewport" content="width=device-width">
+
+  <link rel="stylesheet" href="kss-assets/kss.css">
+  <link rel="stylesheet" href="public/css/style-sass-base.css">
+<link rel="stylesheet" href="public/css/style-sass-components.css">
+<link rel="stylesheet" href="public/css/europa_styleguide.css">
+<link rel="stylesheet" href="public/css/jquery.ui.core.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.datepicker.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.button.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.resizable.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.dialog.min.css">
+
+  <!-- SCRIPTS -->
+  <script src="public/js/jquery-1.9.1.min.js"></script>
+<script src="public/js/jquery.once.js"></script>
+<script src="public/js/jquery.ui.core.min.js"></script>
+<script src="public/js/modernizr.js"></script>
+<script src="public/js/drupal.js"></script>
+<script src="public/js/scrollspy.js"></script>
+<script src="public/js/jquery.ui.widget.min.js"></script>
+<script src="public/js/jquery.ui.mouse.min.js"></script>
+<script src="public/js/jquery.ui.draggable.min.js"></script>
+<script src="public/js/jquery.ui.position.min.js"></script>
+<script src="public/js/jquery.ui.resizable.min.js"></script>
+<script src="public/js/components/datepicker/jquery.ui.datepicker.min.js"></script>
+<script src="public/js/components/datepicker/datepicker.js"></script>
+<script src="public/js/components/jquery.ui.button.min.js"></script>
+<script src="public/js/components/jquery.ui.dialog.min.js"></script>
+<script src="public/js/components/table-responsive.js"></script>
+<script src="public/js/components/lang-switcher.js"></script>
+<script src="public/js/components/lang-select-site.js"></script>
+<script src="public/js/components/filters.js"></script>
+<script src="public/js/components/file.js"></script>
+<script src="public/js/components/breadcrumb.js"></script>
+<script src="public/js/components/collapse.js"></script>
+<script src="public/js/components/transition.js"></script>
+<script src="public/js/components/inpage_nav.js"></script>
+<script src="public/js/europa.js"></script>
+
+  <script src="kss-assets/kss.js"></script>
+  <script src="kss-assets/prettify.js"></script>
+  <script>
+    jQuery(document).ready(function() {
+      jQuery('.hide-menu').click(function() {
+        var $this = jQuery(this);
+        var $main = jQuery('.kss-main');
+        if ($this.text() == 'Hide menu') {
+          $this.css('margin-left', '30px').text('Show menu').next().hide();
+          $main.css({'margin-left': '0', 'width': '100%'});
+        }
+        else {
+          $this.css('margin-left', '0').text('Hide menu').next().show();
+          $main.css({'margin-left': '20%', 'width' : '80%'});
+        }
+      });
+    });
+  </script>
+</head>
+<body id="kss-node">
+<div class="hide-menu">Hide menu</div>
+<div class="kss-sidebar kss-style">
+  <header class="kss-header">
+    <h1 class="kss-doc-title">Europa Style Guide</h1>
+  </header>
+  <nav class="kss-nav">
+    <ul class="kss-nav__menu">
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="./">
+          <span class="kss-nav__ref">0</span
+          ><span class="kss-nav__name">Overview</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-banner.html">
+          <span class="kss-nav__ref">1</span><span class="kss-nav__name">Banner</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-breadcrumb.html">
+          <span class="kss-nav__ref">2</span><span class="kss-nav__name">Breadcrumb</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-buttons.html">
+          <span class="kss-nav__ref">3</span><span class="kss-nav__name">Buttons</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-comment.html">
+          <span class="kss-nav__ref">4</span><span class="kss-nav__name">Comment</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-contextnav.html">
+          <span class="kss-nav__ref">5</span><span class="kss-nav__name">Contextual navigation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-date-block.html">
+          <span class="kss-nav__ref">6</span><span class="kss-nav__name">Date Block</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-datepicker.html">
+          <span class="kss-nav__ref">7</span><span class="kss-nav__name">Datepicker</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-expandable.html">
+          <span class="kss-nav__ref">8</span><span class="kss-nav__name">Expandable</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-featured-item.html">
+          <span class="kss-nav__ref">9</span><span class="kss-nav__name">Featured item</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-field.html">
+          <span class="kss-nav__ref">10</span><span class="kss-nav__name">Field</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-file.html">
+          <span class="kss-nav__ref">11</span><span class="kss-nav__name">File</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-filters.html">
+          <span class="kss-nav__ref">12</span><span class="kss-nav__name">Filters</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-footer.html">
+          <span class="kss-nav__ref">13</span><span class="kss-nav__name">Footer</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-form.html">
+          <span class="kss-nav__ref">14</span><span class="kss-nav__name">Form</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-gallery.html">
+          <span class="kss-nav__ref">15</span><span class="kss-nav__name">Gallery</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-hero-links.html">
+          <span class="kss-nav__ref">16</span><span class="kss-nav__name">Hero links</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-highlighted-item.html">
+          <span class="kss-nav__ref">17</span><span class="kss-nav__name">Highlighted item</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-horizontal-line.html">
+          <span class="kss-nav__ref">18</span><span class="kss-nav__name">Horizontal line</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-icon.html">
+          <span class="kss-nav__ref">19</span><span class="kss-nav__name">Icon</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-inpagenav.html">
+          <span class="kss-nav__ref">20</span><span class="kss-nav__name">Inpage navigation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-labels.html">
+          <span class="kss-nav__ref">21</span><span class="kss-nav__name">Labels</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-langselect.html">
+          <span class="kss-nav__ref">22</span><span class="kss-nav__name">Language select (Page)</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-link-block.html">
+          <span class="kss-nav__ref">23</span><span class="kss-nav__name">Link block</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-listing.html">
+          <span class="kss-nav__ref">24</span><span class="kss-nav__name">Listing</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-messages.html">
+          <span class="kss-nav__ref">25</span><span class="kss-nav__name">Messages</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-meta.html">
+          <span class="kss-nav__ref">26</span><span class="kss-nav__name">Meta</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-navtabs.html">
+          <span class="kss-nav__ref">27</span><span class="kss-nav__name">Bootstrap: Nav tabs</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-notification.html">
+          <span class="kss-nav__ref">28</span><span class="kss-nav__name">Notification</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-page-header.html">
+          <span class="kss-nav__ref">29</span><span class="kss-nav__name">Page header</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-pager.html">
+          <span class="kss-nav__ref">30</span><span class="kss-nav__name">Pager</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-profile_topbar.html">
+          <span class="kss-nav__ref">31</span><span class="kss-nav__name">Profile topbar</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-rsslink.html">
+          <span class="kss-nav__ref">32</span><span class="kss-nav__name">RSS Link</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-searchform.html">
+          <span class="kss-nav__ref">33</span><span class="kss-nav__name">Search form</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-sections.html">
+          <span class="kss-nav__ref">34</span><span class="kss-nav__name">Section</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-site-user-menu.html">
+          <span class="kss-nav__ref">35</span><span class="kss-nav__name">Site user menu</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-siteheader.html">
+          <span class="kss-nav__ref">36</span><span class="kss-nav__name">Site header</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-siteswitcher.html">
+          <span class="kss-nav__ref">37</span><span class="kss-nav__name">Site switcher</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-social.html">
+          <span class="kss-nav__ref">38</span><span class="kss-nav__name">Social Media</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-splashpage.html">
+          <span class="kss-nav__ref">39</span><span class="kss-nav__name">Splash Page</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-table-responsive.html">
+          <span class="kss-nav__ref">40</span><span class="kss-nav__name">Table responsive</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-tags.html">
+          <span class="kss-nav__ref">41</span><span class="kss-nav__name">Tags</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-timeline.html">
+          <span class="kss-nav__ref">42</span><span class="kss-nav__name">Timeline</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-top-image.html">
+          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Top image</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-typography.html">
+          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Typography</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<article role="main" class="kss-main">
+
+    <div id="kssref-gallery-overlay" class="kss-section kss-section--depth-2">
+
+      <div class="kss-style">
+        <h2 class="kss-title kss-title--level-2">
+          <a class="kss-title__permalink" href="#kssref-gallery-overlay">
+            <span class="kss-title__ref">
+              15.1
+              <span class="kss-title__permalink-hash">
+                  #gallery.overlay
+              </span>
+            </span>
+            Gallery Overlay
+          </a>
+        </h2>
+
+          <div class="kss-description">
+            <p>Gallery overlay component.</p>
+
+          </div>
+
+      </div>
+
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+          <div class="kss-modifier__example">
+            <button id="btn-gallery-overlay" class="btn btn-primary">
+  Gallery overlay <span class="icon icon--image"></span>
+</button>
+
+<!-- Modal -->
+<div id="gallery-overlay" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="gallery-overlay">
+    <div class="gallery-overlay__media">
+      <div class="gallery-overlay__media-previous">
+        <a href="#" title="Previous"><span class="sr-only">Previous</span></a>
+      </div>
+
+      <div class="gallery-overlay__media-item-list__wrapper">
+        <ul class="gallery-overlay__media-item-list">
+          <li class="gallery-overlay__media-item active">
+            <img class="img-responsive" src="http://lorempixel.com/600/1200/business" alt="">
+          </li>
+          <li class="gallery-overlay__media-item">
+            <img class="img-responsive" src="http://lorempixel.com/1200/620/business" alt="">
+          </li>
+          <li class="gallery-overlay__media-item">
+            <img class="img-responsive" src="http://lorempixel.com/800/800/business" alt="">
+          </li>
+          <li class="gallery-overlay__media-item">
+            <img class="img-responsive" src="http://lorempixel.com/960/1200/business" alt="">
+          </li>
+        </ul>
+      </div>
+
+      <div class="gallery-overlay__media-next">
+        <a href="#" title="Next"><span class="sr-only">Next</span></a>
+      </div>
+    </div>
+
+    <div class="gallery-overlay__sidebar">
+      <div class="gallery-overlay__sidebar__content">
+        
+        <div class="gallery-overlay__meta">
+          <span class="gallery-overlay__count">2 / 15</span>
+          <span class="gallery-overlay__download">
+            <a href="#" title="Download">Download</a>
+          </span>
+          <span class="gallery-overlay__share">
+            <a href="#" title="Share">Share</a>
+          </span>
+        </div>
+
+        <div class="gallery-overlay__description">
+          <p>Nulla consequat massa quis enim. Donec pede justo.</p>
+          <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Integer tincidunt. <a href="#" title="Cras dapibus">Cras dapibus</a>. Vivamus elementum semper nisi.</p>
+        </div>
+
+        <span class="gallery-overlay__copyright">
+          &copy; Copyright holder, Author name, License type
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  jQuery(function () {
+    jQuery('#gallery-overlay').dialog({
+      autoOpen: false,
+      resizable: false,
+      draggable: false,
+      modal: true,
+      fluid: true,
+      width: 'auto',
+      height: 'auto',
+      open: function (event) {
+        jQuery('.ui-widget-overlay').css('background-color', '#404040');
+        jQuery('.ui-widget-overlay').css({'filter': 'alpha(opacity=90)', 'zoom': '1', 'opacity': '0.9'});
+        jQuery('.ui-dialog').css('padding', '0');
+        jQuery('#gallery-overlay').css('padding', '0');
+        jQuery('.ui-dialog-title').css('display', 'none');
+        var $top_bar = jQuery(event.target).parent().find('.ui-dialog-titlebar');
+        $top_bar.addClass('gallery-overlay__close-wrapper');
+        $top_bar.find('button').addClass('gallery-overlay__close');
+        jQuery('body').css({overflow: 'hidden'});
+      },
+      beforeClose: function (event, ui) {
+        jQuery('body').css({overflow: 'inherit'})
+      }
+    });
+  });
+
+  jQuery('#btn-gallery-overlay').click(function (event) {
+    event.preventDefault();
+    jQuery('#gallery-overlay').dialog('open');
+  });
+
+  jQuery(window).resize(function () {
+    jQuery('#gallery-overlay').dialog('option', 'position', {my: 'center', at: 'center', of: window});
+  });
+
+  jQuery('.gallery-overlay__media-next a').click(function (event) {
+    event.preventDefault();
+    var index = jQuery(this).parent().prev().find('.active').index(),
+        $element = jQuery('.gallery-overlay__media-item');
+    if ($element.size() > index + 1) {
+      $element.eq(index).removeClass('active');
+      $element.eq(index + 1).addClass('active');
+    }
+  });
+
+  jQuery('.gallery-overlay__media-previous a').click(function (event) {
+    event.preventDefault();
+    var index = jQuery(this).parent().next().find('.active').index();
+    if (index > 0) {
+      var $element = jQuery('.gallery-overlay__media-item');
+      $element.eq(index).removeClass('active');
+      $element.eq(index - 1).addClass('active');
+    }
+  });
+</script>
+
+          </div>
+
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button id&#x3D;&quot;btn-gallery-overlay&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;
+  Gallery overlay &lt;span class&#x3D;&quot;icon icon--image&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+
+&lt;!-- Modal --&gt;
+&lt;div id&#x3D;&quot;gallery-overlay&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+  &lt;div class&#x3D;&quot;gallery-overlay&quot;&gt;
+    &lt;div class&#x3D;&quot;gallery-overlay__media&quot;&gt;
+      &lt;div class&#x3D;&quot;gallery-overlay__media-previous&quot;&gt;
+        &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Previous&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Previous&lt;/span&gt;&lt;/a&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;gallery-overlay__media-item-list__wrapper&quot;&gt;
+        &lt;ul class&#x3D;&quot;gallery-overlay__media-item-list&quot;&gt;
+          &lt;li class&#x3D;&quot;gallery-overlay__media-item active&quot;&gt;
+            &lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/600/1200/business&quot; alt&#x3D;&quot;&quot;&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;gallery-overlay__media-item&quot;&gt;
+            &lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/1200/620/business&quot; alt&#x3D;&quot;&quot;&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;gallery-overlay__media-item&quot;&gt;
+            &lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/800/800/business&quot; alt&#x3D;&quot;&quot;&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;gallery-overlay__media-item&quot;&gt;
+            &lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/960/1200/business&quot; alt&#x3D;&quot;&quot;&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;gallery-overlay__media-next&quot;&gt;
+        &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Next&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Next&lt;/span&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;gallery-overlay__sidebar&quot;&gt;
+      &lt;div class&#x3D;&quot;gallery-overlay__sidebar__content&quot;&gt;
+        
+        &lt;div class&#x3D;&quot;gallery-overlay__meta&quot;&gt;
+          &lt;span class&#x3D;&quot;gallery-overlay__count&quot;&gt;2 / 15&lt;/span&gt;
+          &lt;span class&#x3D;&quot;gallery-overlay__download&quot;&gt;
+            &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Download&quot;&gt;Download&lt;/a&gt;
+          &lt;/span&gt;
+          &lt;span class&#x3D;&quot;gallery-overlay__share&quot;&gt;
+            &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Share&quot;&gt;Share&lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;gallery-overlay__description&quot;&gt;
+          &lt;p&gt;Nulla consequat massa quis enim. Donec pede justo.&lt;/p&gt;
+          &lt;p&gt;In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Integer tincidunt. &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Cras dapibus&quot;&gt;Cras dapibus&lt;/a&gt;. Vivamus elementum semper nisi.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;span class&#x3D;&quot;gallery-overlay__copyright&quot;&gt;
+          &amp;copy; Copyright holder, Author name, License type
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+  jQuery(function () {
+    jQuery(&#x27;#gallery-overlay&#x27;).dialog({
+      autoOpen: false,
+      resizable: false,
+      draggable: false,
+      modal: true,
+      fluid: true,
+      width: &#x27;auto&#x27;,
+      height: &#x27;auto&#x27;,
+      open: function (event) {
+        jQuery(&#x27;.ui-widget-overlay&#x27;).css(&#x27;background-color&#x27;, &#x27;#404040&#x27;);
+        jQuery(&#x27;.ui-widget-overlay&#x27;).css({&#x27;filter&#x27;: &#x27;alpha(opacity&#x3D;90)&#x27;, &#x27;zoom&#x27;: &#x27;1&#x27;, &#x27;opacity&#x27;: &#x27;0.9&#x27;});
+        jQuery(&#x27;.ui-dialog&#x27;).css(&#x27;padding&#x27;, &#x27;0&#x27;);
+        jQuery(&#x27;#gallery-overlay&#x27;).css(&#x27;padding&#x27;, &#x27;0&#x27;);
+        jQuery(&#x27;.ui-dialog-title&#x27;).css(&#x27;display&#x27;, &#x27;none&#x27;);
+        var $top_bar &#x3D; jQuery(event.target).parent().find(&#x27;.ui-dialog-titlebar&#x27;);
+        $top_bar.addClass(&#x27;gallery-overlay__close-wrapper&#x27;);
+        $top_bar.find(&#x27;button&#x27;).addClass(&#x27;gallery-overlay__close&#x27;);
+        jQuery(&#x27;body&#x27;).css({overflow: &#x27;hidden&#x27;});
+      },
+      beforeClose: function (event, ui) {
+        jQuery(&#x27;body&#x27;).css({overflow: &#x27;inherit&#x27;})
+      }
+    });
+  });
+
+  jQuery(&#x27;#btn-gallery-overlay&#x27;).click(function (event) {
+    event.preventDefault();
+    jQuery(&#x27;#gallery-overlay&#x27;).dialog(&#x27;open&#x27;);
+  });
+
+  jQuery(window).resize(function () {
+    jQuery(&#x27;#gallery-overlay&#x27;).dialog(&#x27;option&#x27;, &#x27;position&#x27;, {my: &#x27;center&#x27;, at: &#x27;center&#x27;, of: window});
+  });
+
+  jQuery(&#x27;.gallery-overlay__media-next a&#x27;).click(function (event) {
+    event.preventDefault();
+    var index &#x3D; jQuery(this).parent().prev().find(&#x27;.active&#x27;).index(),
+        $element &#x3D; jQuery(&#x27;.gallery-overlay__media-item&#x27;);
+    if ($element.size() &gt; index + 1) {
+      $element.eq(index).removeClass(&#x27;active&#x27;);
+      $element.eq(index + 1).addClass(&#x27;active&#x27;);
+    }
+  });
+
+  jQuery(&#x27;.gallery-overlay__media-previous a&#x27;).click(function (event) {
+    event.preventDefault();
+    var index &#x3D; jQuery(this).parent().next().find(&#x27;.active&#x27;).index();
+    if (index &gt; 0) {
+      var $element &#x3D; jQuery(&#x27;.gallery-overlay__media-item&#x27;);
+      $element.eq(index).removeClass(&#x27;active&#x27;);
+      $element.eq(index - 1).addClass(&#x27;active&#x27;);
+    }
+  });
+&lt;/script&gt;
+</code></pre>
+          </div>
+
+    </div>
+</article>
+
+
+<!-- Automatically built using <a href="https://github.com/kss-node/kss-node">kss-node</a>. -->
+</body>
+</html>

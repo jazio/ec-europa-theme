@@ -13,17 +13,27 @@
 <link rel="stylesheet" href="public/css/style-sass-components.css">
 <link rel="stylesheet" href="public/css/europa_styleguide.css">
 <link rel="stylesheet" href="public/css/jquery.ui.core.min.css">
-<link rel="stylesheet" href="public/css/jquery.ui.datepicker.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.datepicker.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.button.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.resizable.min.css">
+<link rel="stylesheet" href="public/css/components/jquery.ui.dialog.min.css">
 
   <!-- SCRIPTS -->
   <script src="public/js/jquery-1.9.1.min.js"></script>
 <script src="public/js/jquery.once.js"></script>
 <script src="public/js/jquery.ui.core.min.js"></script>
-<script src="public/js/datepicker/jquery.ui.datepicker.min.js"></script>
-<script src="public/js/datepicker/datepicker.js"></script>
 <script src="public/js/modernizr.js"></script>
 <script src="public/js/drupal.js"></script>
 <script src="public/js/scrollspy.js"></script>
+<script src="public/js/jquery.ui.widget.min.js"></script>
+<script src="public/js/jquery.ui.mouse.min.js"></script>
+<script src="public/js/jquery.ui.draggable.min.js"></script>
+<script src="public/js/jquery.ui.position.min.js"></script>
+<script src="public/js/jquery.ui.resizable.min.js"></script>
+<script src="public/js/components/datepicker/jquery.ui.datepicker.min.js"></script>
+<script src="public/js/components/datepicker/datepicker.js"></script>
+<script src="public/js/components/jquery.ui.button.min.js"></script>
+<script src="public/js/components/jquery.ui.dialog.min.js"></script>
 <script src="public/js/components/table-responsive.js"></script>
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
@@ -308,52 +318,72 @@
           </a>
         </h1>
 
+          <div class="kss-description">
+            <p>Messages is a component that is used for displaying different types of messages
+like:</p>
+<ul>
+<li>info (by default)</li>
+<li>status</li>
+<li>warning</li>
+<li>error</li>
+<li>live</li>
+</ul>
+<p>The component messages is defined &quot;info&quot; by default, the &quot;info&quot; type doesn&#39;t
+exist as class. The &quot;live&quot; type is meant to be used in cases like live streaming
+for events.</p>
+
+          </div>
 
       </div>
 
         <div class="kss-modifier__wrapper">
           <div class="kss-modifier__heading kss-style">
-            Example
+            Examples
           </div>
 
           <div class="kss-modifier__example">
             <div class="messages info alert">
-  <a class="close" data-dismiss="alert" href="#">×</a>
+  <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Info message: </span>Some info title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
+<div class="messages info alert ">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <h3><span class="sr-only">Info message: </span>Some info title</h3>
+</div>
+
 <div class="messages warning alert">
-  <a class="close" data-dismiss="alert" href="#">×</a>
+  <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
 <div class="messages status alert">
-  <a class="close" data-dismiss="alert" href="#">×</a>
+  <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Status message: </span>Some status title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
 <div class="messages error alert">
-  <a class="close" data-dismiss="alert" href="#">×</a>
+  <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Error message: </span>Some error title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
 <div class="messages live alert">
-  <a class="close" data-dismiss="alert" href="#">×</a>
+  <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Live streaming message: </span>Some livestream title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
 <div class="messages info alert">
-  <a class="close" data-dismiss="alert" href="#">×</a>
+  <a href="#" class="close" data-dismiss="alert">×</a>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
 <div class="messages warning alert">
-  <a class="close" data-dismiss="alert" href="#">×</a>
+  <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
 </div>
 
@@ -364,45 +394,108 @@
 
           </div>
 
+            <div class="kss-modifier__name kss-style">
+              messages--icon-center
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Centralized icon
+            </div>
+            <div class="kss-modifier__example">
+              <div class="messages info alert">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <h3><span class="sr-only">Info message: </span>Some info title</h3>
+  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+<div class="messages info alert messages--icon-center">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <h3><span class="sr-only">Info message: </span>Some info title</h3>
+</div>
+
+<div class="messages warning alert">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
+  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+<div class="messages status alert">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <h3><span class="sr-only">Status message: </span>Some status title</h3>
+  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+<div class="messages error alert">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <h3><span class="sr-only">Error message: </span>Some error title</h3>
+  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+<div class="messages live alert">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <h3><span class="sr-only">Live streaming message: </span>Some livestream title</h3>
+  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+<div class="messages info alert">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+<div class="messages warning alert">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
+</div>
+
+<div class="messages status">
+  <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
+  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+            </div>
         </div>
           <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;messages info alert&quot;&gt;
-  &lt;a class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot; href&#x3D;&quot;#&quot;&gt;×&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
   &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Info message: &lt;/span&gt;Some info title&lt;/h3&gt;
   &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 
+&lt;div class&#x3D;&quot;messages info alert [modifier class]&quot;&gt;
+  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
+  &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Info message: &lt;/span&gt;Some info title&lt;/h3&gt;
+&lt;/div&gt;
+
 &lt;div class&#x3D;&quot;messages warning alert&quot;&gt;
-  &lt;a class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot; href&#x3D;&quot;#&quot;&gt;×&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
   &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Warning message: &lt;/span&gt;Some warning title&lt;/h3&gt;
   &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class&#x3D;&quot;messages status alert&quot;&gt;
-  &lt;a class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot; href&#x3D;&quot;#&quot;&gt;×&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
   &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Status message: &lt;/span&gt;Some status title&lt;/h3&gt;
   &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class&#x3D;&quot;messages error alert&quot;&gt;
-  &lt;a class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot; href&#x3D;&quot;#&quot;&gt;×&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
   &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Error message: &lt;/span&gt;Some error title&lt;/h3&gt;
   &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class&#x3D;&quot;messages live alert&quot;&gt;
-  &lt;a class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot; href&#x3D;&quot;#&quot;&gt;×&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
   &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Live streaming message: &lt;/span&gt;Some livestream title&lt;/h3&gt;
   &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class&#x3D;&quot;messages info alert&quot;&gt;
-  &lt;a class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot; href&#x3D;&quot;#&quot;&gt;×&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
   &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class&#x3D;&quot;messages warning alert&quot;&gt;
-  &lt;a class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot; href&#x3D;&quot;#&quot;&gt;×&lt;/a&gt;
+  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
   &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Warning message: &lt;/span&gt;Some warning title&lt;/h3&gt;
 &lt;/div&gt;
 
