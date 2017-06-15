@@ -1263,7 +1263,7 @@ which is actually the container of the component.</p>
             <div class="listing__wrapper listing__wrapper--row-three">
   <ul class="listing listing--no-border listing--teaser listing--cta">
     <li class="listing__item">
-      <div class="listing__item__wrapper">
+      <div class="node">
         <a href="#" class="listing__item-link" title="Ab aspernatur at dolor dolorem">
           <span class="sr-only">Ab aspernatur at dolor dolorem</span>
         </a>
@@ -1274,7 +1274,7 @@ which is actually the container of the component.</p>
       </div>
     </li>
     <li class="listing__item">
-      <div class="listing__item__wrapper">
+      <div class="node">
         <a href="#" class="listing__item-link" title="Architecto at deserunt">
           <span class="sr-only">Architecto at deserunt</span>
         </a>
@@ -1391,7 +1391,7 @@ which is actually the container of the component.</p>
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--row-three&quot;&gt;
   &lt;ul class&#x3D;&quot;listing listing--no-border listing--teaser listing--cta&quot;&gt;
     &lt;li class&#x3D;&quot;listing__item&quot;&gt;
-      &lt;div class&#x3D;&quot;listing__item__wrapper&quot;&gt;
+      &lt;div class&#x3D;&quot;node&quot;&gt;
         &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot; title&#x3D;&quot;Ab aspernatur at dolor dolorem&quot;&gt;
           &lt;span class&#x3D;&quot;sr-only&quot;&gt;Ab aspernatur at dolor dolorem&lt;/span&gt;
         &lt;/a&gt;
@@ -1402,7 +1402,7 @@ which is actually the container of the component.</p>
       &lt;/div&gt;
     &lt;/li&gt;
     &lt;li class&#x3D;&quot;listing__item&quot;&gt;
-      &lt;div class&#x3D;&quot;listing__item__wrapper&quot;&gt;
+      &lt;div class&#x3D;&quot;node&quot;&gt;
         &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot; title&#x3D;&quot;Architecto at deserunt&quot;&gt;
           &lt;span class&#x3D;&quot;sr-only&quot;&gt;Architecto at deserunt&lt;/span&gt;
         &lt;/a&gt;
@@ -2449,30 +2449,30 @@ The following example is a general one, using &quot;Section&quot; styling.</p>
     <!-- Title with additional text, links, and grandchilds section item. -->
     <div class="section__item">
       <div class="listing listing--navigation">
-        <a href="#" class="listing__item-link" title="Title with additional text, links and grandchilds"></a>
+        <a href="#test-item-link" class="listing__item-link" title="Title with additional text, links and grandchilds"></a>
         <h2 class="listing__section-title">Title with additional text, links and grandchilds</h2>
         <p class="listing__description">This is the description. EU strategy, its role in setting priorities, and its implementation through EU policy.</p>
         <div class="listing__item">
-          <a href="#" class="listing__title" title="Introduction to EU law<">Introduction to EU law</a>
+          <a href="#test" class="listing__title" title="Introduction to EU law<">Introduction to EU law</a>
         </div>
         <div class="listing__item">
-          <a href="#" class="listing__title" title="Find EU legislation (EUR-Lex)">Find EU legislation (EUR-Lex)</a>
+          <a href="#test1" class="listing__title" title="Find EU legislation (EUR-Lex)">Find EU legislation (EUR-Lex)</a>
         </div>
         <div class="listing__item">
-          <a href="#" class="listing__title" title="EU case law (EUR-Lex)">EU case law (EUR-Lex)</a>
+          <a href="#test2" class="listing__title" title="EU case law (EUR-Lex)">EU case law (EUR-Lex)</a>
         </div>
         <div class="listing__item">
-          <a href="#" class="listing__title" title="Summaries of EU legislation">Summaries of EU legislation</a>
+          <a href="#test3" class="listing__title" title="Summaries of EU legislation">Summaries of EU legislation</a>
         </div>
         <hr class="listing__separator">
         <div class="listing__item">
-          <a href="#" class="listing__title" title="Related Item 1.">Related Item 1.</a>
+          <a href="#test4" class="listing__title" title="Related Item 1.">Related Item 1.</a>
         </div>
         <div class="listing__item">
-          <a href="#" class="listing__title" title="Related Item 2.">Related Item 2.</a>
+          <a href="#test5" class="listing__title" title="Related Item 2.">Related Item 2.</a>
         </div>
         <div class="listing__item">
-          <a href="#" class="listing__title" title="Related Item 3.">Related Item 3.</a>
+          <a href="#test6" class="listing__title" title="Related Item 3.">Related Item 3.</a>
         </div>
       </div>
     </div>
@@ -2515,30 +2515,30 @@ The following example is a general one, using &quot;Section&quot; styling.</p>
     &lt;!-- Title with additional text, links, and grandchilds section item. --&gt;
     &lt;div class&#x3D;&quot;section__item&quot;&gt;
       &lt;div class&#x3D;&quot;listing listing--navigation&quot;&gt;
-        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot; title&#x3D;&quot;Title with additional text, links and grandchilds&quot;&gt;&lt;/a&gt;
+        &lt;a href&#x3D;&quot;#test-item-link&quot; class&#x3D;&quot;listing__item-link&quot; title&#x3D;&quot;Title with additional text, links and grandchilds&quot;&gt;&lt;/a&gt;
         &lt;h2 class&#x3D;&quot;listing__section-title&quot;&gt;Title with additional text, links and grandchilds&lt;/h2&gt;
         &lt;p class&#x3D;&quot;listing__description&quot;&gt;This is the description. EU strategy, its role in setting priorities, and its implementation through EU policy.&lt;/p&gt;
         &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Introduction to EU law&lt;&quot;&gt;Introduction to EU law&lt;/a&gt;
+          &lt;a href&#x3D;&quot;#test&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Introduction to EU law&lt;&quot;&gt;Introduction to EU law&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Find EU legislation (EUR-Lex)&quot;&gt;Find EU legislation (EUR-Lex)&lt;/a&gt;
+          &lt;a href&#x3D;&quot;#test1&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Find EU legislation (EUR-Lex)&quot;&gt;Find EU legislation (EUR-Lex)&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;EU case law (EUR-Lex)&quot;&gt;EU case law (EUR-Lex)&lt;/a&gt;
+          &lt;a href&#x3D;&quot;#test2&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;EU case law (EUR-Lex)&quot;&gt;EU case law (EUR-Lex)&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Summaries of EU legislation&quot;&gt;Summaries of EU legislation&lt;/a&gt;
+          &lt;a href&#x3D;&quot;#test3&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Summaries of EU legislation&quot;&gt;Summaries of EU legislation&lt;/a&gt;
         &lt;/div&gt;
         &lt;hr class&#x3D;&quot;listing__separator&quot;&gt;
         &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Related Item 1.&quot;&gt;Related Item 1.&lt;/a&gt;
+          &lt;a href&#x3D;&quot;#test4&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Related Item 1.&quot;&gt;Related Item 1.&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Related Item 2.&quot;&gt;Related Item 2.&lt;/a&gt;
+          &lt;a href&#x3D;&quot;#test5&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Related Item 2.&quot;&gt;Related Item 2.&lt;/a&gt;
         &lt;/div&gt;
         &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Related Item 3.&quot;&gt;Related Item 3.&lt;/a&gt;
+          &lt;a href&#x3D;&quot;#test6&quot; class&#x3D;&quot;listing__title&quot; title&#x3D;&quot;Related Item 3.&quot;&gt;Related Item 3.&lt;/a&gt;
         &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;

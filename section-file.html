@@ -743,6 +743,7 @@ is displayed multimedia files (image and video).</p>
 
           <div class="kss-modifier__example">
             <div style="width: 50%;"> <!-- only required for the style guide -->
+<div class="kss-state">Iframe example</div>
   <div class="file file--video">
     <div class="file__container">
       <iframe src="http://ec.europa.eu/avservices/play.cfm?ref=I101631" allowfullscreen="allowfullscreen" scrolling="no"></iframe>
@@ -751,13 +752,24 @@ is displayed multimedia files (image and video).</p>
       Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
     </span>
   </div>
-</div>
+  <div class="kss-state">Video tag example</div>
+  <div class="file file--video">
+    <div class="file__container">
+      <video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4" type="video/mp4" controls="controls">
+      </video>
+    </div>
+    <span class="file__caption">
+      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+    </span>
+  </div>
 
+</div>
           </div>
 
         </div>
           <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div style&#x3D;&quot;width: 50%;&quot;&gt; &lt;!-- only required for the style guide --&gt;
+&lt;div class&#x3D;&quot;kss-state&quot;&gt;Iframe example&lt;/div&gt;
   &lt;div class&#x3D;&quot;file file--video&quot;&gt;
     &lt;div class&#x3D;&quot;file__container&quot;&gt;
       &lt;iframe src&#x3D;&quot;http://ec.europa.eu/avservices/play.cfm?ref&#x3D;I101631&quot; allowfullscreen&#x3D;&quot;allowfullscreen&quot; scrolling&#x3D;&quot;no&quot;&gt;&lt;/iframe&gt;
@@ -766,8 +778,18 @@ is displayed multimedia files (image and video).</p>
       Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
     &lt;/span&gt;
   &lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
+  &lt;div class&#x3D;&quot;kss-state&quot;&gt;Video tag example&lt;/div&gt;
+  &lt;div class&#x3D;&quot;file file--video&quot;&gt;
+    &lt;div class&#x3D;&quot;file__container&quot;&gt;
+      &lt;video src&#x3D;&quot;http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4&quot; type&#x3D;&quot;video/mp4&quot; controls&#x3D;&quot;controls&quot;&gt;
+      &lt;/video&gt;
+    &lt;/div&gt;
+    &lt;span class&#x3D;&quot;file__caption&quot;&gt;
+      Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
+    &lt;/span&gt;
+  &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
           </div>
 
     </section>
