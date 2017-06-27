@@ -309,23 +309,107 @@
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-listing-2">
             <span class="kss-title__ref">
-              24.2
+              24.1
               <span class="kss-title__permalink-hash">
                   #listing.2
               </span>
             </span>
-            Listing layouts
+            Listing thumbnails
           </a>
         </h2>
 
           <div class="kss-description">
-            <p>Listing layouts are implemented as modifiers of the listing__wrapper element
-which is actually the container of the component.</p>
+            <p>This is a modifier that applies changes to the listing__item element.</p>
 
           </div>
 
       </div>
 
+        <div class="kss-modifier__wrapper">
+          <div class="kss-modifier__heading kss-style">
+            Example
+          </div>
+
+          <div class="kss-modifier__example">
+            <div class="listing__wrapper">
+  <ul class="listing listing--column-left">
+    <li class="listing__item">
+      <div class="listing__item__wrapper">
+        <a href="#" class="listing__item-link"></a>
+        <div class="listing__column-second ">
+          <img src="public/images/png/placeholder_female.png">
+        </div>
+        <div class="listing__column-main">
+          <div class="meta">
+            <span class="meta__item meta__item--type">DEPUTY DIRECTOR-GENERAL</span>
+          </div>
+          <h3 class="listing__title">
+            <a href="#" title="Title link">María Angeles Benítez Salas</a>
+          </h3>
+        </div>
+      </div>
+    </li>
+    <li class="listing__item">
+      <div class="listing__item__wrapper">
+        <a href="#" class="listing__item-link"></a>
+        <div class="listing__column-second ">
+          <img src="public/images/png/placeholder_male.png">
+        </div>
+        <div class="listing__column-main">
+          <div class="meta">
+            <span class="meta__item meta__item--type">DEPUTY DIRECTOR-GENERAL</span>
+          </div>
+          <h3 class="listing__title">
+            <a href="#" title="Title link">Mihail Dumitru</a>
+          </h3>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+          </div>
+
+        </div>
+          <div class="kss-markup kss-style">
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;listing__wrapper&quot;&gt;
+  &lt;ul class&#x3D;&quot;listing listing--column-left&quot;&gt;
+    &lt;li class&#x3D;&quot;listing__item&quot;&gt;
+      &lt;div class&#x3D;&quot;listing__item__wrapper&quot;&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot;&gt;&lt;/a&gt;
+        &lt;div class&#x3D;&quot;listing__column-second &quot;&gt;
+          &lt;img src&#x3D;&quot;public/images/png/placeholder_female.png&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;listing__column-main&quot;&gt;
+          &lt;div class&#x3D;&quot;meta&quot;&gt;
+            &lt;span class&#x3D;&quot;meta__item meta__item--type&quot;&gt;DEPUTY DIRECTOR-GENERAL&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;
+            &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Title link&quot;&gt;María Angeles Benítez Salas&lt;/a&gt;
+          &lt;/h3&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li class&#x3D;&quot;listing__item&quot;&gt;
+      &lt;div class&#x3D;&quot;listing__item__wrapper&quot;&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot;&gt;&lt;/a&gt;
+        &lt;div class&#x3D;&quot;listing__column-second &quot;&gt;
+          &lt;img src&#x3D;&quot;public/images/png/placeholder_male.png&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;listing__column-main&quot;&gt;
+          &lt;div class&#x3D;&quot;meta&quot;&gt;
+            &lt;span class&#x3D;&quot;meta__item meta__item--type&quot;&gt;DEPUTY DIRECTOR-GENERAL&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;
+            &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;Title link&quot;&gt;Mihail Dumitru&lt;/a&gt;
+          &lt;/h3&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
 
     </div>
 </article>
