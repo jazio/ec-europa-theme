@@ -38,11 +38,11 @@
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
 <script src="public/js/components/filters.js"></script>
-<script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
 <script src="public/js/components/transition.js"></script>
 <script src="public/js/components/inpage_nav.js"></script>
+<script src="public/js/libraries/superclamp.min.js"></script>
 <script src="public/js/europa.js"></script>
 
   <script src="kss-assets/kss.js"></script>
@@ -309,13 +309,18 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-timeline-navigation.html">
+          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Timeline navigation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-top-image.html">
-          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Top image</span>
+          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Top image</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Typography</span>
+          <span class="kss-nav__ref">45</span><span class="kss-nav__name">Typography</span>
         </a>
       </li>
     </ul>
@@ -370,51 +375,73 @@ collapsing margin.</p>
           </div>
 
           <div class="kss-modifier__example">
-            <div class="section-styleguide-random">This is a random element preceding the section component,
-the margin below is given by the section</div>
-<div class="section section-styleguide">
-  <div class="section__group section__group-styleguide">
-    <p>First child section__group element</p>
-  </div>
-  <div class="section__group section__group-styleguide">
-     <p>Section__group element</p>
-  </div>
-  <div class="section__group section__group-styleguide">
-     <p>Last child section__group element</p>
+            <div class="section-styleguide-random">
+This is a random element preceding the section component, the margin below is given by the section
+</div>
+
+<div class="row">
+  <div class="section section-styleguide">
+    <div class="section__group section__group-styleguide">
+      <p>First child section__group element</p>
+    </div>
   </div>
 </div>
-<div class="section section-styleguide">
-  <div class="section__group section__group-styleguide">
-    <p>Single child section__group element</p>
+
+<div class="row">
+  <div class="section section-styleguide">
+    <div class="section__group section__group-styleguide">
+       <p>Section__group element</p>
+    </div>
+    <div class="section__group section__group-styleguide">
+       <p>Last child section__group element</p>
+    </div>
   </div>
-</div>  
-<div class="section-styleguide-random">This is a random element following the section component,
-the upper margin is given by the section</div> 
+  <div class="section section-styleguide">
+    <div class="section__group section__group-styleguide">
+      <p>Single child section__group element</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-styleguide-random">
+  This is a random element following the section component, the upper margin is given by the section
+</div> 
 
           </div>
 
         </div>
           <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;section-styleguide-random&quot;&gt;This is a random element preceding the section component,
-the margin below is given by the section&lt;/div&gt;
-&lt;div class&#x3D;&quot;section section-styleguide&quot;&gt;
-  &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
-    &lt;p&gt;First child section__group element&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
-     &lt;p&gt;Section__group element&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
-     &lt;p&gt;Last child section__group element&lt;/p&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;section-styleguide-random&quot;&gt;
+This is a random element preceding the section component, the margin below is given by the section
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;div class&#x3D;&quot;section section-styleguide&quot;&gt;
+    &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
+      &lt;p&gt;First child section__group element&lt;/p&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class&#x3D;&quot;section section-styleguide&quot;&gt;
-  &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
-    &lt;p&gt;Single child section__group element&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;div class&#x3D;&quot;section section-styleguide&quot;&gt;
+    &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
+       &lt;p&gt;Section__group element&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
+       &lt;p&gt;Last child section__group element&lt;/p&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;  
-&lt;div class&#x3D;&quot;section-styleguide-random&quot;&gt;This is a random element following the section component,
-the upper margin is given by the section&lt;/div&gt; 
+  &lt;div class&#x3D;&quot;section section-styleguide&quot;&gt;
+    &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
+      &lt;p&gt;Single child section__group element&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;section-styleguide-random&quot;&gt;
+  This is a random element following the section component, the upper margin is given by the section
+&lt;/div&gt; 
 </code></pre>
           </div>
 
@@ -453,35 +480,31 @@ the upper margin is given by the section&lt;/div&gt;
       <div class="listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper">
         <div class="listing listing--teaser">
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/explained/index_en.cfm">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">EU budget explained</h3>    
-              </div>
-            </a>
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/explained/index_en.cfm"></a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">EU budget explained</h3>    
+            </div>
           </div>
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/euprojects/">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">EU budget for results web app</h3>
-                <p>A selection of EU-funded projects.</p>    
-              </div>
-            </a>
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/euprojects/"></a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">EU budget for results web app</h3>
+              <p>A selection of EU-funded projects.</p>    
+            </div>
           </div>
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/mff/introduction/index_en.cfm">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">Multiannual Financial Framework 2014-2020</h3>
-                <p>Explanation of the EU long-term spending plan.</p>    
-              </div>
-            </a>
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/mff/introduction/index_en.cfm"></a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">Multiannual Financial Framework 2014-2020</h3>
+              <p>Explanation of the EU long-term spending plan.</p>    
+            </div>
           </div>
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/annual/index_en.cfm">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">Data and figures about the EU budget</h3>
-                <p>Information on the annual budget life-cycle.</p>    
-              </div>
-            </a>
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/annual/index_en.cfm"></a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">Data and figures about the EU budget</h3>
+              <p>Information on the annual budget life-cycle.</p>    
+            </div>
           </div>
         </div>
       </div>
@@ -490,18 +513,16 @@ the upper margin is given by the section&lt;/div&gt;
       <div class="listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper">
         <div class="listing listing--teaser">
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/figures/interactive/index_en.cfm">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">EU expenditure and revenue 2014-2020</h3>    
-              </div>
-            </a>
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/figures/interactive/index_en.cfm"></a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">EU expenditure and revenue 2014-2020</h3>    
+            </div>
           </div>
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/funding/index_en">
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/funding/index_en"></a>
               <div class="listing__column-main column-main ">
                 <h3 class="listing__title">Guide to receiving EU funding</h3>    
               </div>
-            </a>
           </div>
         </div>
       </div>
@@ -518,35 +539,31 @@ the upper margin is given by the section&lt;/div&gt;
       &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper&quot;&gt;
         &lt;div class&#x3D;&quot;listing listing--teaser&quot;&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/explained/index_en.cfm&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;EU budget explained&lt;/h3&gt;    
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/explained/index_en.cfm&quot;&gt;&lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;EU budget explained&lt;/h3&gt;    
+            &lt;/div&gt;
           &lt;/div&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/euprojects/&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;EU budget for results web app&lt;/h3&gt;
-                &lt;p&gt;A selection of EU-funded projects.&lt;/p&gt;    
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/euprojects/&quot;&gt;&lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;EU budget for results web app&lt;/h3&gt;
+              &lt;p&gt;A selection of EU-funded projects.&lt;/p&gt;    
+            &lt;/div&gt;
           &lt;/div&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/mff/introduction/index_en.cfm&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Multiannual Financial Framework 2014-2020&lt;/h3&gt;
-                &lt;p&gt;Explanation of the EU long-term spending plan.&lt;/p&gt;    
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/mff/introduction/index_en.cfm&quot;&gt;&lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Multiannual Financial Framework 2014-2020&lt;/h3&gt;
+              &lt;p&gt;Explanation of the EU long-term spending plan.&lt;/p&gt;    
+            &lt;/div&gt;
           &lt;/div&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/annual/index_en.cfm&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Data and figures about the EU budget&lt;/h3&gt;
-                &lt;p&gt;Information on the annual budget life-cycle.&lt;/p&gt;    
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/annual/index_en.cfm&quot;&gt;&lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Data and figures about the EU budget&lt;/h3&gt;
+              &lt;p&gt;Information on the annual budget life-cycle.&lt;/p&gt;    
+            &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -555,18 +572,16 @@ the upper margin is given by the section&lt;/div&gt;
       &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper&quot;&gt;
         &lt;div class&#x3D;&quot;listing listing--teaser&quot;&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/figures/interactive/index_en.cfm&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;EU expenditure and revenue 2014-2020&lt;/h3&gt;    
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/figures/interactive/index_en.cfm&quot;&gt;&lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;EU expenditure and revenue 2014-2020&lt;/h3&gt;    
+            &lt;/div&gt;
           &lt;/div&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/funding/index_en&quot;&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/funding/index_en&quot;&gt;&lt;/a&gt;
               &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
                 &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Guide to receiving EU funding&lt;/h3&gt;    
               &lt;/div&gt;
-            &lt;/a&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -610,11 +625,12 @@ the upper margin is given by the section&lt;/div&gt;
       <div class="listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper">
         <div class="listing listing--teaser">
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/explained/index_en.cfm">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">EU budget explained</h3>    
-              </div>
-            </a>
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/explained/index_en.cfm"></a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">
+                <a href="#" title="">EU budget explained</a>
+              </h3>    
+            </div>
           </div>
         </div>
       </div>  
@@ -623,12 +639,11 @@ the upper margin is given by the section&lt;/div&gt;
       <div class="listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper">
         <div class="listing listing--teaser">
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/annual/index_en.cfm">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">Data and figures about the EU budget</h3>
-                <p>Information on the annual budget life-cycle.</p>
-              </div>
-            </a>
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/annual/index_en.cfm"></a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">Data and figures about the EU budget</h3>
+              <p>Information on the annual budget life-cycle.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -637,11 +652,12 @@ the upper margin is given by the section&lt;/div&gt;
       <div class="listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper">
         <div class="listing listing--teaser">
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/figures/interactive/index_en.cfm">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">EU expenditure and revenue 2014-2020</h3>
-              </div>
-            </a>
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/figures/interactive/index_en.cfm"></a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">
+                <a href="#" title="">EU expenditure and revenue 2014-2020</a>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
@@ -650,11 +666,9 @@ the upper margin is given by the section&lt;/div&gt;
       <div class="listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper">
         <div class="listing listing--teaser">
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/funding/index_en">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">Guide to receiving EU funding</h3>    
-              </div>
-            </a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">Guide to receiving EU funding</h3>    
+            </div>
           </div>
         </div>
       </div>
@@ -663,11 +677,12 @@ the upper margin is given by the section&lt;/div&gt;
       <div class="listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper">
         <div class="listing listing--teaser">
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/explained/index_en.cfm">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">EU budget explained</h3>
-              </div>
-            </a>
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/explained/index_en.cfm"></a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">
+                <a href="#" title="">EU budget explained</a>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
@@ -676,12 +691,13 @@ the upper margin is given by the section&lt;/div&gt;
       <div class="listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper">
         <div class="listing listing--teaser">
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/euprojects/">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">EU budget for results web app</h3>
-                <p>A selection of EU-funded projects.</p>
-              </div>
-            </a>
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/euprojects/"></a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">
+                <a href="#" title="">EU budget for results web app</a>
+              </h3>
+              <p>A selection of EU-funded projects.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -690,12 +706,13 @@ the upper margin is given by the section&lt;/div&gt;
       <div class="listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper">
         <div class="listing listing--teaser">
           <div class="listing__item">
-            <a class="listing__item-link" href="http://ec.europa.eu/budget/mff/introduction/index_en.cfm">
-              <div class="listing__column-main column-main ">
-                <h3 class="listing__title">Multiannual Financial Framework 2014-2020</h3>
-                <p>Explanation of the EU long-term spending plan.</p>    
-              </div>
-            </a>
+            <a class="listing__item-link" href="http://ec.europa.eu/budget/mff/introduction/index_en.cfm"></a>
+            <div class="listing__column-main column-main ">
+              <h3 class="listing__title">
+                <a href="#" title="">Multiannual Financial Framework 2014-2020</a>
+              </h3>
+              <p>Explanation of the EU long-term spending plan.</p>    
+            </div>
           </div>
         </div>
       </div>  
@@ -713,11 +730,12 @@ the upper margin is given by the section&lt;/div&gt;
       &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper&quot;&gt;
         &lt;div class&#x3D;&quot;listing listing--teaser&quot;&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/explained/index_en.cfm&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;EU budget explained&lt;/h3&gt;    
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/explained/index_en.cfm&quot;&gt;&lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;
+                &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot;&gt;EU budget explained&lt;/a&gt;
+              &lt;/h3&gt;    
+            &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;  
@@ -726,12 +744,11 @@ the upper margin is given by the section&lt;/div&gt;
       &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper&quot;&gt;
         &lt;div class&#x3D;&quot;listing listing--teaser&quot;&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/annual/index_en.cfm&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Data and figures about the EU budget&lt;/h3&gt;
-                &lt;p&gt;Information on the annual budget life-cycle.&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/annual/index_en.cfm&quot;&gt;&lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Data and figures about the EU budget&lt;/h3&gt;
+              &lt;p&gt;Information on the annual budget life-cycle.&lt;/p&gt;
+            &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -740,11 +757,12 @@ the upper margin is given by the section&lt;/div&gt;
       &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper&quot;&gt;
         &lt;div class&#x3D;&quot;listing listing--teaser&quot;&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/figures/interactive/index_en.cfm&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;EU expenditure and revenue 2014-2020&lt;/h3&gt;
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/figures/interactive/index_en.cfm&quot;&gt;&lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;
+                &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot;&gt;EU expenditure and revenue 2014-2020&lt;/a&gt;
+              &lt;/h3&gt;
+            &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -753,11 +771,9 @@ the upper margin is given by the section&lt;/div&gt;
       &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper&quot;&gt;
         &lt;div class&#x3D;&quot;listing listing--teaser&quot;&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/funding/index_en&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Guide to receiving EU funding&lt;/h3&gt;    
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Guide to receiving EU funding&lt;/h3&gt;    
+            &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -766,11 +782,12 @@ the upper margin is given by the section&lt;/div&gt;
       &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper&quot;&gt;
         &lt;div class&#x3D;&quot;listing listing--teaser&quot;&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/explained/index_en.cfm&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;EU budget explained&lt;/h3&gt;
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/explained/index_en.cfm&quot;&gt;&lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;
+                &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot;&gt;EU budget explained&lt;/a&gt;
+              &lt;/h3&gt;
+            &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -779,12 +796,13 @@ the upper margin is given by the section&lt;/div&gt;
       &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper&quot;&gt;
         &lt;div class&#x3D;&quot;listing listing--teaser&quot;&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/euprojects/&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;EU budget for results web app&lt;/h3&gt;
-                &lt;p&gt;A selection of EU-funded projects.&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/euprojects/&quot;&gt;&lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;
+                &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot;&gt;EU budget for results web app&lt;/a&gt;
+              &lt;/h3&gt;
+              &lt;p&gt;A selection of EU-funded projects.&lt;/p&gt;
+            &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;
@@ -793,12 +811,13 @@ the upper margin is given by the section&lt;/div&gt;
       &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default listing--line-left listing--teaser__wrapper&quot;&gt;
         &lt;div class&#x3D;&quot;listing listing--teaser&quot;&gt;
           &lt;div class&#x3D;&quot;listing__item&quot;&gt;
-            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/mff/introduction/index_en.cfm&quot;&gt;
-              &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
-                &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Multiannual Financial Framework 2014-2020&lt;/h3&gt;
-                &lt;p&gt;Explanation of the EU long-term spending plan.&lt;/p&gt;    
-              &lt;/div&gt;
-            &lt;/a&gt;
+            &lt;a class&#x3D;&quot;listing__item-link&quot; href&#x3D;&quot;http://ec.europa.eu/budget/mff/introduction/index_en.cfm&quot;&gt;&lt;/a&gt;
+            &lt;div class&#x3D;&quot;listing__column-main column-main &quot;&gt;
+              &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;
+                &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot;&gt;Multiannual Financial Framework 2014-2020&lt;/a&gt;
+              &lt;/h3&gt;
+              &lt;p&gt;Explanation of the EU long-term spending plan.&lt;/p&gt;    
+            &lt;/div&gt;
           &lt;/div&gt;
         &lt;/div&gt;
       &lt;/div&gt;  
@@ -834,55 +853,22 @@ the upper margin is given by the section&lt;/div&gt;
 
           <div class="kss-modifier__example">
             <div class="section">
-  <div class="section__group">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
+  <div class="section__group  section__group--full-width">
+    <div class="listing__wrapper listing__wrapper--row-two">
+      <ul class="listing--title listing listing--no-border">
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
+          <a href="#" class="listing__item-link"></a>
+          <h3 class="listing__title">
+            <a href="#" title="">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</a>
+          </h3>
         </li>
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-   <div class="section__group ">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
-        </li>
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
+          <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
         </li>
       </ul>
     </div>
   </div>
-   <div class="section__group">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
-        </li>
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
- </div> 
+</div> 
           </div>
 
             <div class="kss-modifier__name kss-style">
@@ -893,55 +879,22 @@ the upper margin is given by the section&lt;/div&gt;
             </div>
             <div class="kss-modifier__example">
               <div class="section">
-  <div class="section__group">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
+  <div class="section__group section__group--highlight-grey section__group--full-width">
+    <div class="listing__wrapper listing__wrapper--row-two">
+      <ul class="listing--title listing listing--no-border">
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
+          <a href="#" class="listing__item-link"></a>
+          <h3 class="listing__title">
+            <a href="#" title="">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</a>
+          </h3>
         </li>
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-   <div class="section__group section__group--highlight-grey">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
-        </li>
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
+          <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
         </li>
       </ul>
     </div>
   </div>
-   <div class="section__group">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
-        </li>
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
- </div> 
+</div> 
             </div>
             <div class="kss-modifier__name kss-style">
               .section__group--highlight-grey-lightest
@@ -951,55 +904,22 @@ the upper margin is given by the section&lt;/div&gt;
             </div>
             <div class="kss-modifier__example">
               <div class="section">
-  <div class="section__group">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
+  <div class="section__group section__group--highlight-grey-lightest section__group--full-width">
+    <div class="listing__wrapper listing__wrapper--row-two">
+      <ul class="listing--title listing listing--no-border">
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
+          <a href="#" class="listing__item-link"></a>
+          <h3 class="listing__title">
+            <a href="#" title="">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</a>
+          </h3>
         </li>
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-   <div class="section__group section__group--highlight-grey-lightest">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
-        </li>
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
+          <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
         </li>
       </ul>
     </div>
   </div>
-   <div class="section__group">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
-        </li>
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
- </div> 
+</div> 
             </div>
             <div class="kss-modifier__name kss-style">
               .section__group--highlight-yellow
@@ -1009,55 +929,47 @@ the upper margin is given by the section&lt;/div&gt;
             </div>
             <div class="kss-modifier__example">
               <div class="section">
-  <div class="section__group">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
+  <div class="section__group section__group--highlight-yellow section__group--full-width">
+    <div class="listing__wrapper listing__wrapper--row-two">
+      <ul class="listing--title listing listing--no-border">
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
+          <a href="#" class="listing__item-link"></a>
+          <h3 class="listing__title">
+            <a href="#" title="">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</a>
+          </h3>
         </li>
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-   <div class="section__group section__group--highlight-yellow">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
-        </li>
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
+          <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
         </li>
       </ul>
     </div>
   </div>
-   <div class="section__group">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
+</div> 
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .section__group--highlight-bluish
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Highlighted section group element in a bluish grey
+            </div>
+            <div class="kss-modifier__example">
+              <div class="section">
+  <div class="section__group section__group--highlight-bluish section__group--full-width">
+    <div class="listing__wrapper listing__wrapper--row-two">
+      <ul class="listing--title listing listing--no-border">
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
+          <a href="#" class="listing__item-link"></a>
+          <h3 class="listing__title">
+            <a href="#" title="">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</a>
+          </h3>
         </li>
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
+          <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
         </li>
       </ul>
     </div>
   </div>
- </div> 
+</div> 
             </div>
             <div class="kss-modifier__name kss-style">
               .section__group--no-margin
@@ -1067,108 +979,42 @@ the upper margin is given by the section&lt;/div&gt;
             </div>
             <div class="kss-modifier__example">
               <div class="section">
-  <div class="section__group">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
+  <div class="section__group section__group--no-margin section__group--full-width">
+    <div class="listing__wrapper listing__wrapper--row-two">
+      <ul class="listing--title listing listing--no-border">
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
+          <a href="#" class="listing__item-link"></a>
+          <h3 class="listing__title">
+            <a href="#" title="">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</a>
+          </h3>
         </li>
         <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-   <div class="section__group section__group--no-margin">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
-        </li>
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
+          <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
         </li>
       </ul>
     </div>
   </div>
-   <div class="section__group">
-    <div class="listing__wrapper listing__wrapper--default">
-      <ul class="listing--title">
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.</h3>
-          </a>
-        </li>
-        <li class="listing__item">
-          <a href="#" class="listing__item-link">
-            <h3 class="listing__title">Architecto at deserunt, distinctio, eaque eos est et facere facilis.</h3>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
- </div> 
+</div> 
             </div>
         </div>
           <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;section&quot;&gt;
-  &lt;div class&#x3D;&quot;section__group&quot;&gt;
-    &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default&quot;&gt;
-      &lt;ul class&#x3D;&quot;listing--title&quot;&gt;
+  &lt;div class&#x3D;&quot;section__group [modifier class] section__group--full-width&quot;&gt;
+    &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--row-two&quot;&gt;
+      &lt;ul class&#x3D;&quot;listing--title listing listing--no-border&quot;&gt;
         &lt;li class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot;&gt;
-            &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.&lt;/h3&gt;
-          &lt;/a&gt;
+          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot;&gt;&lt;/a&gt;
+          &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;
+            &lt;a href&#x3D;&quot;#&quot; title&#x3D;&quot;&quot;&gt;Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.&lt;/a&gt;
+          &lt;/h3&gt;
         &lt;/li&gt;
         &lt;li class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot;&gt;
-            &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Architecto at deserunt, distinctio, eaque eos est et facere facilis.&lt;/h3&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-   &lt;div class&#x3D;&quot;section__group [modifier class]&quot;&gt;
-    &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default&quot;&gt;
-      &lt;ul class&#x3D;&quot;listing--title&quot;&gt;
-        &lt;li class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot;&gt;
-            &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.&lt;/h3&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot;&gt;
-            &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Architecto at deserunt, distinctio, eaque eos est et facere facilis.&lt;/h3&gt;
-          &lt;/a&gt;
+          &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Architecto at deserunt, distinctio, eaque eos est et facere facilis.&lt;/h3&gt;
         &lt;/li&gt;
       &lt;/ul&gt;
     &lt;/div&gt;
   &lt;/div&gt;
-   &lt;div class&#x3D;&quot;section__group&quot;&gt;
-    &lt;div class&#x3D;&quot;listing__wrapper listing__wrapper--default&quot;&gt;
-      &lt;ul class&#x3D;&quot;listing--title&quot;&gt;
-        &lt;li class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot;&gt;
-            &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Ab aspernatur at dolor dolorem doloremque error exercitationem id non quidem quisquam.&lt;/h3&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-        &lt;li class&#x3D;&quot;listing__item&quot;&gt;
-          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;listing__item-link&quot;&gt;
-            &lt;h3 class&#x3D;&quot;listing__title&quot;&gt;Architecto at deserunt, distinctio, eaque eos est et facere facilis.&lt;/h3&gt;
-          &lt;/a&gt;
-        &lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
- &lt;/div&gt; </code></pre>
+&lt;/div&gt; </code></pre>
           </div>
 
     </section>

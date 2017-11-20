@@ -38,11 +38,11 @@
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
 <script src="public/js/components/filters.js"></script>
-<script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
 <script src="public/js/components/transition.js"></script>
 <script src="public/js/components/inpage_nav.js"></script>
+<script src="public/js/libraries/superclamp.min.js"></script>
 <script src="public/js/europa.js"></script>
 
   <script src="kss-assets/kss.js"></script>
@@ -297,13 +297,18 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-timeline-navigation.html">
+          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Timeline navigation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-top-image.html">
-          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Top image</span>
+          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Top image</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Typography</span>
+          <span class="kss-nav__ref">45</span><span class="kss-nav__name">Typography</span>
         </a>
       </li>
     </ul>
@@ -344,32 +349,39 @@
     <div class="col-md-4 mediagallery__item has-icon">
       <div class="mediagallery__item_container">
         <img typeof="foaf:Image" class="img-responsive" src="http://lorempixel.com/380/185/business" width="380" height="185" alt="">
-        <span class="mediagallery__caption">Dummy image 1 Dummy imag</span>
-        <span class="mediagallery__icon">
-          <span class="icon icon--camera"></span>
-        </span>
+        <div class="mediagallery__item_info">
+          <span class="mediagallery__caption">The caption for the image is shown when hovering the mediagallery item thumbnails. Please check whether you see the ellipsis because they are supposed to be here to tell you that the text is longer</span>
+          <span class="mediagallery__icon">
+            <span class="icon icon--camera"></span>
+          </span>
+        </div>
       </div>
     </div>
     <div class="col-md-3 mediagallery__item has-icon">
       <div class="mediagallery__item_container">
         <img typeof="foaf:Image" class="img-responsive" src="http://lorempixel.com/285/185/business" width="285" height="185" alt="">
-        <span class="mediagallery__icon">
-          <span class="icon icon--audio"></span>
-        </span>
+        <div class="mediagallery__item_info">
+          <span class="mediagallery__icon">
+            <span class="icon icon--audio"></span>
+          </span>
+        </div>
       </div>
     </div>
     <div class="col-md-2 mediagallery__item has-icon">
       <div class="mediagallery__item_container">
         <img typeof="foaf:Image" class="img-responsive" src="http://lorempixel.com/190/185/business" width="190" height="185" alt="">
-        <span class="mediagallery__caption">Dummy image 1 Dummy image 1Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1</span>
-        <span class="mediagallery__icon">
-          <span class="icon icon--camera"></span>
-        </span>
+        <div class="mediagallery__item_info">
+          <span class="mediagallery__caption">A very loooong caption for one of the images that we show in the mediagallery together, the text will not be readable and ellipsis will be added when maximum height is reached.</span>
+          <span class="mediagallery__icon">
+            <span class="icon icon--camera"></span>
+          </span>
+        </div>
       </div>
     </div>
-    <div class="col-md-3 mediagallery__item">
+    <div class="col-md-3 mediagallery__item">  
       <div class="mediagallery__item_container">
         <img typeof="foaf:Image" class="img-responsive" src="http://lorempixel.com/285/185/business" width="285" height="185" alt="">
+        <div class="mediagallery__item_info"></div>
       </div>
     </div>
   </div>
@@ -377,23 +389,29 @@
     <div class="col-md-2 mediagallery__item">
       <div class="mediagallery__item_container">
         <img typeof="foaf:Image" class="img-responsive" src="http://lorempixel.com/190/185/business" width="190" height="185" alt="">
-        <span class="mediagallery__caption">Dummy image 1 Dummy image 1Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1</span>
+        <div class="mediagallery__item_info">
+          <span class="mediagallery__caption">A short caption.</span>
+        </div>
       </div>
     </div>
     <div class="col-md-3 mediagallery__item">
       <div class="mediagallery__item_container">
         <img typeof="foaf:Image" class="img-responsive" src="http://lorempixel.com/285/185/business" width="285" height="185" alt="">
+        <div class="mediagallery__item_info"></div>
       </div>
     </div>
     <div class="col-md-3 mediagallery__item">
       <div class="mediagallery__item_container">
         <img typeof="foaf:Image" class="img-responsive" src="http://lorempixel.com/285/185/business" width="285" height="185" alt="">
+        <div class="mediagallery__item_info"></div>
       </div>
     </div>
     <div class="col-md-4 mediagallery__item">
       <div class="mediagallery__item_container">
         <img typeof="foaf:Image" class="img-responsive" src="http://lorempixel.com/380/185/business" width="380" height="185" alt="">
-        <span class="mediagallery__caption">Dummy image 1 Dummy image 1Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1</span>
+        <div class="mediagallery__item_info">
+          <span class="mediagallery__caption">A super long caption for an item that is not showing any icon associated. Please check whether you see the ellipsis because they are supposed to be here to tell you that the text is longer.</span>
+        </div>
       </div>
     </div>
   </div>
@@ -408,32 +426,39 @@
     &lt;div class&#x3D;&quot;col-md-4 mediagallery__item has-icon&quot;&gt;
       &lt;div class&#x3D;&quot;mediagallery__item_container&quot;&gt;
         &lt;img typeof&#x3D;&quot;foaf:Image&quot; class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/380/185/business&quot; width&#x3D;&quot;380&quot; height&#x3D;&quot;185&quot; alt&#x3D;&quot;&quot;&gt;
-        &lt;span class&#x3D;&quot;mediagallery__caption&quot;&gt;Dummy image 1 Dummy imag&lt;/span&gt;
-        &lt;span class&#x3D;&quot;mediagallery__icon&quot;&gt;
-          &lt;span class&#x3D;&quot;icon icon--camera&quot;&gt;&lt;/span&gt;
-        &lt;/span&gt;
+        &lt;div class&#x3D;&quot;mediagallery__item_info&quot;&gt;
+          &lt;span class&#x3D;&quot;mediagallery__caption&quot;&gt;The caption for the image is shown when hovering the mediagallery item thumbnails. Please check whether you see the ellipsis because they are supposed to be here to tell you that the text is longer&lt;/span&gt;
+          &lt;span class&#x3D;&quot;mediagallery__icon&quot;&gt;
+            &lt;span class&#x3D;&quot;icon icon--camera&quot;&gt;&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class&#x3D;&quot;col-md-3 mediagallery__item has-icon&quot;&gt;
       &lt;div class&#x3D;&quot;mediagallery__item_container&quot;&gt;
         &lt;img typeof&#x3D;&quot;foaf:Image&quot; class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/285/185/business&quot; width&#x3D;&quot;285&quot; height&#x3D;&quot;185&quot; alt&#x3D;&quot;&quot;&gt;
-        &lt;span class&#x3D;&quot;mediagallery__icon&quot;&gt;
-          &lt;span class&#x3D;&quot;icon icon--audio&quot;&gt;&lt;/span&gt;
-        &lt;/span&gt;
+        &lt;div class&#x3D;&quot;mediagallery__item_info&quot;&gt;
+          &lt;span class&#x3D;&quot;mediagallery__icon&quot;&gt;
+            &lt;span class&#x3D;&quot;icon icon--audio&quot;&gt;&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class&#x3D;&quot;col-md-2 mediagallery__item has-icon&quot;&gt;
       &lt;div class&#x3D;&quot;mediagallery__item_container&quot;&gt;
         &lt;img typeof&#x3D;&quot;foaf:Image&quot; class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/190/185/business&quot; width&#x3D;&quot;190&quot; height&#x3D;&quot;185&quot; alt&#x3D;&quot;&quot;&gt;
-        &lt;span class&#x3D;&quot;mediagallery__caption&quot;&gt;Dummy image 1 Dummy image 1Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1&lt;/span&gt;
-        &lt;span class&#x3D;&quot;mediagallery__icon&quot;&gt;
-          &lt;span class&#x3D;&quot;icon icon--camera&quot;&gt;&lt;/span&gt;
-        &lt;/span&gt;
+        &lt;div class&#x3D;&quot;mediagallery__item_info&quot;&gt;
+          &lt;span class&#x3D;&quot;mediagallery__caption&quot;&gt;A very loooong caption for one of the images that we show in the mediagallery together, the text will not be readable and ellipsis will be added when maximum height is reached.&lt;/span&gt;
+          &lt;span class&#x3D;&quot;mediagallery__icon&quot;&gt;
+            &lt;span class&#x3D;&quot;icon icon--camera&quot;&gt;&lt;/span&gt;
+          &lt;/span&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-    &lt;div class&#x3D;&quot;col-md-3 mediagallery__item&quot;&gt;
+    &lt;div class&#x3D;&quot;col-md-3 mediagallery__item&quot;&gt;  
       &lt;div class&#x3D;&quot;mediagallery__item_container&quot;&gt;
         &lt;img typeof&#x3D;&quot;foaf:Image&quot; class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/285/185/business&quot; width&#x3D;&quot;285&quot; height&#x3D;&quot;185&quot; alt&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;mediagallery__item_info&quot;&gt;&lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -441,23 +466,29 @@
     &lt;div class&#x3D;&quot;col-md-2 mediagallery__item&quot;&gt;
       &lt;div class&#x3D;&quot;mediagallery__item_container&quot;&gt;
         &lt;img typeof&#x3D;&quot;foaf:Image&quot; class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/190/185/business&quot; width&#x3D;&quot;190&quot; height&#x3D;&quot;185&quot; alt&#x3D;&quot;&quot;&gt;
-        &lt;span class&#x3D;&quot;mediagallery__caption&quot;&gt;Dummy image 1 Dummy image 1Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1&lt;/span&gt;
+        &lt;div class&#x3D;&quot;mediagallery__item_info&quot;&gt;
+          &lt;span class&#x3D;&quot;mediagallery__caption&quot;&gt;A short caption.&lt;/span&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class&#x3D;&quot;col-md-3 mediagallery__item&quot;&gt;
       &lt;div class&#x3D;&quot;mediagallery__item_container&quot;&gt;
         &lt;img typeof&#x3D;&quot;foaf:Image&quot; class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/285/185/business&quot; width&#x3D;&quot;285&quot; height&#x3D;&quot;185&quot; alt&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;mediagallery__item_info&quot;&gt;&lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class&#x3D;&quot;col-md-3 mediagallery__item&quot;&gt;
       &lt;div class&#x3D;&quot;mediagallery__item_container&quot;&gt;
         &lt;img typeof&#x3D;&quot;foaf:Image&quot; class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/285/185/business&quot; width&#x3D;&quot;285&quot; height&#x3D;&quot;185&quot; alt&#x3D;&quot;&quot;&gt;
+        &lt;div class&#x3D;&quot;mediagallery__item_info&quot;&gt;&lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
     &lt;div class&#x3D;&quot;col-md-4 mediagallery__item&quot;&gt;
       &lt;div class&#x3D;&quot;mediagallery__item_container&quot;&gt;
         &lt;img typeof&#x3D;&quot;foaf:Image&quot; class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/380/185/business&quot; width&#x3D;&quot;380&quot; height&#x3D;&quot;185&quot; alt&#x3D;&quot;&quot;&gt;
-        &lt;span class&#x3D;&quot;mediagallery__caption&quot;&gt;Dummy image 1 Dummy image 1Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1 Dummy image 1&lt;/span&gt;
+        &lt;div class&#x3D;&quot;mediagallery__item_info&quot;&gt;
+          &lt;span class&#x3D;&quot;mediagallery__caption&quot;&gt;A super long caption for an item that is not showing any icon associated. Please check whether you see the ellipsis because they are supposed to be here to tell you that the text is longer.&lt;/span&gt;
+        &lt;/div&gt;
       &lt;/div&gt;
     &lt;/div&gt;
   &lt;/div&gt;
@@ -497,7 +528,6 @@
             <button id="btn-gallery-overlay" class="btn btn-primary">
   Gallery overlay <span class="icon icon--image"></span>
 </button>
-
 <!-- Modal -->
 <div id="gallery-overlay" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="gallery-overlay">
@@ -516,6 +546,20 @@
           </li>
           <li class="gallery-overlay__media-item">
             <img class="img-responsive" src="http://lorempixel.com/800/800/business" alt="">
+          </li>
+          <li class="gallery-overlay__media-item">
+            <div class="file--video">
+              <div class="file__container">
+                <iframe frameborder="0" width="480" height="270" src="//www.dailymotion.com/embed/video/xqjkfz?autoPlay=0" allowfullscreen=""></iframe>
+              </div>
+            </div>       
+          </li>
+          <li class="gallery-overlay__media-item">
+            <div class="file--video">
+              <div class="file__container">
+                <iframe src="https://player.vimeo.com/video/236584808?color=ebf490&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+            </div>
           </li>
           <li class="gallery-overlay__media-item">
             <img class="img-responsive" src="http://lorempixel.com/960/1200/business" alt="">
@@ -618,7 +662,6 @@
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;button id&#x3D;&quot;btn-gallery-overlay&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;
   Gallery overlay &lt;span class&#x3D;&quot;icon icon--image&quot;&gt;&lt;/span&gt;
 &lt;/button&gt;
-
 &lt;!-- Modal --&gt;
 &lt;div id&#x3D;&quot;gallery-overlay&quot; tabindex&#x3D;&quot;-1&quot; role&#x3D;&quot;dialog&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
   &lt;div class&#x3D;&quot;gallery-overlay&quot;&gt;
@@ -637,6 +680,20 @@
           &lt;/li&gt;
           &lt;li class&#x3D;&quot;gallery-overlay__media-item&quot;&gt;
             &lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/800/800/business&quot; alt&#x3D;&quot;&quot;&gt;
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;gallery-overlay__media-item&quot;&gt;
+            &lt;div class&#x3D;&quot;file--video&quot;&gt;
+              &lt;div class&#x3D;&quot;file__container&quot;&gt;
+                &lt;iframe frameborder&#x3D;&quot;0&quot; width&#x3D;&quot;480&quot; height&#x3D;&quot;270&quot; src&#x3D;&quot;//www.dailymotion.com/embed/video/xqjkfz?autoPlay&#x3D;0&quot; allowfullscreen&#x3D;&quot;&quot;&gt;&lt;/iframe&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;       
+          &lt;/li&gt;
+          &lt;li class&#x3D;&quot;gallery-overlay__media-item&quot;&gt;
+            &lt;div class&#x3D;&quot;file--video&quot;&gt;
+              &lt;div class&#x3D;&quot;file__container&quot;&gt;
+                &lt;iframe src&#x3D;&quot;https://player.vimeo.com/video/236584808?color&#x3D;ebf490&amp;title&#x3D;0&amp;byline&#x3D;0&amp;portrait&#x3D;0&quot; width&#x3D;&quot;640&quot; height&#x3D;&quot;360&quot; frameborder&#x3D;&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
           &lt;/li&gt;
           &lt;li class&#x3D;&quot;gallery-overlay__media-item&quot;&gt;
             &lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;http://lorempixel.com/960/1200/business&quot; alt&#x3D;&quot;&quot;&gt;

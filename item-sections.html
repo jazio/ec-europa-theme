@@ -38,11 +38,11 @@
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
 <script src="public/js/components/filters.js"></script>
-<script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
 <script src="public/js/components/transition.js"></script>
 <script src="public/js/components/inpage_nav.js"></script>
+<script src="public/js/libraries/superclamp.min.js"></script>
 <script src="public/js/europa.js"></script>
 
   <script src="kss-assets/kss.js"></script>
@@ -309,13 +309,18 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-timeline-navigation.html">
+          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Timeline navigation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-top-image.html">
-          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Top image</span>
+          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Top image</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Typography</span>
+          <span class="kss-nav__ref">45</span><span class="kss-nav__name">Typography</span>
         </a>
       </li>
     </ul>
@@ -370,51 +375,73 @@ collapsing margin.</p>
           </div>
 
           <div class="kss-modifier__example">
-            <div class="section-styleguide-random">This is a random element preceding the section component,
-the margin below is given by the section</div>
-<div class="section section-styleguide">
-  <div class="section__group section__group-styleguide">
-    <p>First child section__group element</p>
-  </div>
-  <div class="section__group section__group-styleguide">
-     <p>Section__group element</p>
-  </div>
-  <div class="section__group section__group-styleguide">
-     <p>Last child section__group element</p>
+            <div class="section-styleguide-random">
+This is a random element preceding the section component, the margin below is given by the section
+</div>
+
+<div class="row">
+  <div class="section section-styleguide">
+    <div class="section__group section__group-styleguide">
+      <p>First child section__group element</p>
+    </div>
   </div>
 </div>
-<div class="section section-styleguide">
-  <div class="section__group section__group-styleguide">
-    <p>Single child section__group element</p>
+
+<div class="row">
+  <div class="section section-styleguide">
+    <div class="section__group section__group-styleguide">
+       <p>Section__group element</p>
+    </div>
+    <div class="section__group section__group-styleguide">
+       <p>Last child section__group element</p>
+    </div>
   </div>
-</div>  
-<div class="section-styleguide-random">This is a random element following the section component,
-the upper margin is given by the section</div> 
+  <div class="section section-styleguide">
+    <div class="section__group section__group-styleguide">
+      <p>Single child section__group element</p>
+    </div>
+  </div>
+</div>
+
+<div class="section-styleguide-random">
+  This is a random element following the section component, the upper margin is given by the section
+</div> 
 
           </div>
 
         </div>
           <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;section-styleguide-random&quot;&gt;This is a random element preceding the section component,
-the margin below is given by the section&lt;/div&gt;
-&lt;div class&#x3D;&quot;section section-styleguide&quot;&gt;
-  &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
-    &lt;p&gt;First child section__group element&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
-     &lt;p&gt;Section__group element&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
-     &lt;p&gt;Last child section__group element&lt;/p&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;section-styleguide-random&quot;&gt;
+This is a random element preceding the section component, the margin below is given by the section
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;div class&#x3D;&quot;section section-styleguide&quot;&gt;
+    &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
+      &lt;p&gt;First child section__group element&lt;/p&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-&lt;div class&#x3D;&quot;section section-styleguide&quot;&gt;
-  &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
-    &lt;p&gt;Single child section__group element&lt;/p&gt;
+
+&lt;div class&#x3D;&quot;row&quot;&gt;
+  &lt;div class&#x3D;&quot;section section-styleguide&quot;&gt;
+    &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
+       &lt;p&gt;Section__group element&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
+       &lt;p&gt;Last child section__group element&lt;/p&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-&lt;/div&gt;  
-&lt;div class&#x3D;&quot;section-styleguide-random&quot;&gt;This is a random element following the section component,
-the upper margin is given by the section&lt;/div&gt; 
+  &lt;div class&#x3D;&quot;section section-styleguide&quot;&gt;
+    &lt;div class&#x3D;&quot;section__group section__group-styleguide&quot;&gt;
+      &lt;p&gt;Single child section__group element&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class&#x3D;&quot;section-styleguide-random&quot;&gt;
+  This is a random element following the section component, the upper margin is given by the section
+&lt;/div&gt; 
 </code></pre>
           </div>
 

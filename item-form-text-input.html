@@ -38,11 +38,11 @@
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
 <script src="public/js/components/filters.js"></script>
-<script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
 <script src="public/js/components/transition.js"></script>
 <script src="public/js/components/inpage_nav.js"></script>
+<script src="public/js/libraries/superclamp.min.js"></script>
 <script src="public/js/europa.js"></script>
 
   <script src="kss-assets/kss.js"></script>
@@ -289,13 +289,18 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-timeline-navigation.html">
+          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Timeline navigation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-top-image.html">
-          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Top image</span>
+          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Top image</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Typography</span>
+          <span class="kss-nav__ref">45</span><span class="kss-nav__name">Typography</span>
         </a>
       </li>
     </ul>
@@ -309,7 +314,7 @@
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-form-text-input">
             <span class="kss-title__ref">
-              14.10
+              14.9
               <span class="kss-title__permalink-hash">
                   #form.text-input
               </span>
@@ -330,30 +335,31 @@
             <form>
   <div class="form-group">
     <label for="example-input-id-1">Text Input - default with placeholder</label>
-    <p class="help-block">This is some help text.</p>
     <input type="text" class="form-control" id="example-input-id-1" placeholder="Some placeholder text."/>
+    <p class="help-block">This is some help text.</p>
   </div>
 
   <div class="form-group focus">
     <label for="example-input-id-2">Text Input - active + focus</label>
-    <p class="help-block">This is some placeholder help text.</p>
     <input type="text" name="field-name-3" id="example-input-id-2" class="form-control is-focused"
            value="Some entered text"/>
+    <div class="messages messages--form status alert"><p>Some feedback message</p></div>
+    <p class="help-block">This is some placeholder help text.</p>
   </div>
 
   <div class="form-group is-disabled">
     <label for="example-input-id-3">Text Input - disabled</label>
-    <p class="help-block">This is some placeholder help text.</p>
     <input type="text" name="field-name-2" id="example-input-id-3" class="form-control" disabled
            placeholder="Some placeholder text."/>
+    <p class="help-block">This is some placeholder help text.</p>
   </div>
 
   <div class="form-group has-error">
-    <label for="example-input-id-4">Text Input - error on a field</label>
-    <p class="help-block">This is some placeholder help text.</p>
+    <label for="example-input-id-4" class="error">Text Input - error on a field</label>
     <input type="text" name="field-name-4" id="example-input-id-4" class="form-control has-error"
            placeholder="Some placeholder text."/>
-    <p class="form-field-feedback">Some feedback message</p>
+    <div class="messages messages--form messages--error alert"><p>Some error message</p></div>
+    <p class="help-block">This is some placeholder help text.</p>
   </div>
 </form>
 
@@ -364,30 +370,31 @@
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;form&gt;
   &lt;div class&#x3D;&quot;form-group&quot;&gt;
     &lt;label for&#x3D;&quot;example-input-id-1&quot;&gt;Text Input - default with placeholder&lt;/label&gt;
-    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some help text.&lt;/p&gt;
     &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;example-input-id-1&quot; placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
+    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some help text.&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div class&#x3D;&quot;form-group focus&quot;&gt;
     &lt;label for&#x3D;&quot;example-input-id-2&quot;&gt;Text Input - active + focus&lt;/label&gt;
-    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
     &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-3&quot; id&#x3D;&quot;example-input-id-2&quot; class&#x3D;&quot;form-control is-focused&quot;
            value&#x3D;&quot;Some entered text&quot;/&gt;
+    &lt;div class&#x3D;&quot;messages messages--form status alert&quot;&gt;&lt;p&gt;Some feedback message&lt;/p&gt;&lt;/div&gt;
+    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div class&#x3D;&quot;form-group is-disabled&quot;&gt;
     &lt;label for&#x3D;&quot;example-input-id-3&quot;&gt;Text Input - disabled&lt;/label&gt;
-    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
     &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-2&quot; id&#x3D;&quot;example-input-id-3&quot; class&#x3D;&quot;form-control&quot; disabled
            placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
+    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div class&#x3D;&quot;form-group has-error&quot;&gt;
-    &lt;label for&#x3D;&quot;example-input-id-4&quot;&gt;Text Input - error on a field&lt;/label&gt;
-    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
+    &lt;label for&#x3D;&quot;example-input-id-4&quot; class&#x3D;&quot;error&quot;&gt;Text Input - error on a field&lt;/label&gt;
     &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-4&quot; id&#x3D;&quot;example-input-id-4&quot; class&#x3D;&quot;form-control has-error&quot;
            placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
-    &lt;p class&#x3D;&quot;form-field-feedback&quot;&gt;Some feedback message&lt;/p&gt;
+    &lt;div class&#x3D;&quot;messages messages--form messages--error alert&quot;&gt;&lt;p&gt;Some error message&lt;/p&gt;&lt;/div&gt;
+    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/form&gt;
 </code></pre>

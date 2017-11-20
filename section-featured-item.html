@@ -38,11 +38,11 @@
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
 <script src="public/js/components/filters.js"></script>
-<script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
 <script src="public/js/components/transition.js"></script>
 <script src="public/js/components/inpage_nav.js"></script>
+<script src="public/js/libraries/superclamp.min.js"></script>
 <script src="public/js/europa.js"></script>
 
   <script src="kss-assets/kss.js"></script>
@@ -303,13 +303,18 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-timeline-navigation.html">
+          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Timeline navigation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-top-image.html">
-          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Top image</span>
+          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Top image</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Typography</span>
+          <span class="kss-nav__ref">45</span><span class="kss-nav__name">Typography</span>
         </a>
       </li>
     </ul>
@@ -366,15 +371,18 @@
 
           <div class="kss-modifier__example">
             <div class="featured-item">
+  <a href="#" class="featured-item__link" title="Energy Union tour">
+    <span class="sr-only">Energy Union tour</span>
+  </a>
   <div class="featured-item__image">
-    <img src="http://lorempixel.com/590/450/business" />
+    <img src="http://lorempixel.com/590/450/business"/>
   </div>
   <div class="featured-item__content">
     <div class="meta meta--header">
       <span class="meta__item meta__item--type">announcement</span>
       <span class="meta__item"><span class="date-display-single">21 December 2016</span></span>
     </div>
-    <h3>Energy Union tour</h3>
+    <h3 class="featured-item__title">Energy Union tour</h3>
     <p>
       Vice-President Šefcovic is visiting EU countries to present the opportunities that the Energy Union offers for Europe. The list of countries below are those he will visit over the next few months. Each completed visit comes with a presentation of the benefits of the Energy Union for that particular country. More visits will be added over time.
     </p>
@@ -386,15 +394,18 @@
         </div>
           <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;featured-item&quot;&gt;
+  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;featured-item__link&quot; title&#x3D;&quot;Energy Union tour&quot;&gt;
+    &lt;span class&#x3D;&quot;sr-only&quot;&gt;Energy Union tour&lt;/span&gt;
+  &lt;/a&gt;
   &lt;div class&#x3D;&quot;featured-item__image&quot;&gt;
-    &lt;img src&#x3D;&quot;http://lorempixel.com/590/450/business&quot; /&gt;
+    &lt;img src&#x3D;&quot;http://lorempixel.com/590/450/business&quot;/&gt;
   &lt;/div&gt;
   &lt;div class&#x3D;&quot;featured-item__content&quot;&gt;
     &lt;div class&#x3D;&quot;meta meta--header&quot;&gt;
       &lt;span class&#x3D;&quot;meta__item meta__item--type&quot;&gt;announcement&lt;/span&gt;
       &lt;span class&#x3D;&quot;meta__item&quot;&gt;&lt;span class&#x3D;&quot;date-display-single&quot;&gt;21 December 2016&lt;/span&gt;&lt;/span&gt;
     &lt;/div&gt;
-    &lt;h3&gt;Energy Union tour&lt;/h3&gt;
+    &lt;h3 class&#x3D;&quot;featured-item__title&quot;&gt;Energy Union tour&lt;/h3&gt;
     &lt;p&gt;
       Vice-President Šefcovic is visiting EU countries to present the opportunities that the Energy Union offers for Europe. The list of countries below are those he will visit over the next few months. Each completed visit comes with a presentation of the benefits of the Energy Union for that particular country. More visits will be added over time.
     &lt;/p&gt;

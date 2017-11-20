@@ -141,14 +141,15 @@
       $fullElement.css({
         'position': 'fixed',
         'bottom': 'auto',
-        'top': 0,
+        'top': '1.667em',
         'width': $parentWidth + 'px'
       });
     }
   }
 
   function GetInpageOffsetTop() {
-    return $('.inpage-nav__wrapper').closest('.col-md-3').offset().top;
+    var firstOfList = $('.inpage-nav__wrapper').find('li:first-of-type > a').attr('href');
+    return $(firstOfList).offset().top;
   }
 
   function GetOffsetBottom(selector) {

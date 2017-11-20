@@ -38,11 +38,11 @@
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
 <script src="public/js/components/filters.js"></script>
-<script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
 <script src="public/js/components/transition.js"></script>
 <script src="public/js/components/inpage_nav.js"></script>
+<script src="public/js/libraries/superclamp.min.js"></script>
 <script src="public/js/europa.js"></script>
 
   <script src="kss-assets/kss.js"></script>
@@ -155,62 +155,56 @@
                 </a>
               </li>
               <li class="kss-nav__menu-item">
-                <a class="kss-nav__menu-link" href="section-form.html#kssref-form-feedback-message">
-                  <span class="kss-nav__ref ">14.2</span
-                  ><span class="kss-nav__name">Feedback message</span>
-                </a>
-              </li>
-              <li class="kss-nav__menu-item">
                 <a class="kss-nav__menu-link" href="section-form.html#kssref-form-file-upload">
-                  <span class="kss-nav__ref ">14.3</span
+                  <span class="kss-nav__ref ">14.2</span
                   ><span class="kss-nav__name">File upload</span>
                 </a>
               </li>
               <li class="kss-nav__menu-item">
                 <a class="kss-nav__menu-link" href="section-form.html#kssref-form-form-group">
-                  <span class="kss-nav__ref ">14.4</span
+                  <span class="kss-nav__ref ">14.3</span
                   ><span class="kss-nav__name">Form Group</span>
                 </a>
               </li>
               <li class="kss-nav__menu-item">
                 <a class="kss-nav__menu-link" href="section-form.html#kssref-form-help-block">
-                  <span class="kss-nav__ref ">14.5</span
+                  <span class="kss-nav__ref ">14.4</span
                   ><span class="kss-nav__name">Help Block</span>
                 </a>
               </li>
               <li class="kss-nav__menu-item">
                 <a class="kss-nav__menu-link" href="section-form.html#kssref-form-label">
-                  <span class="kss-nav__ref ">14.6</span
+                  <span class="kss-nav__ref ">14.5</span
                   ><span class="kss-nav__name">Label</span>
                 </a>
               </li>
               <li class="kss-nav__menu-item">
                 <a class="kss-nav__menu-link" href="section-form.html#kssref-form-legend">
-                  <span class="kss-nav__ref ">14.7</span
+                  <span class="kss-nav__ref ">14.6</span
                   ><span class="kss-nav__name">Legend</span>
                 </a>
               </li>
               <li class="kss-nav__menu-item">
                 <a class="kss-nav__menu-link" href="section-form.html#kssref-form-radio">
-                  <span class="kss-nav__ref ">14.8</span
+                  <span class="kss-nav__ref ">14.7</span
                   ><span class="kss-nav__name">Radio</span>
                 </a>
               </li>
               <li class="kss-nav__menu-item">
                 <a class="kss-nav__menu-link" href="section-form.html#kssref-form-select">
-                  <span class="kss-nav__ref ">14.9</span
+                  <span class="kss-nav__ref ">14.8</span
                   ><span class="kss-nav__name">Select</span>
                 </a>
               </li>
               <li class="kss-nav__menu-item">
                 <a class="kss-nav__menu-link" href="section-form.html#kssref-form-text-input">
-                  <span class="kss-nav__ref ">14.10</span
+                  <span class="kss-nav__ref ">14.9</span
                   ><span class="kss-nav__name">Text Input</span>
                 </a>
               </li>
               <li class="kss-nav__menu-item">
                 <a class="kss-nav__menu-link" href="section-form.html#kssref-form-textarea">
-                  <span class="kss-nav__ref ">14.11</span
+                  <span class="kss-nav__ref ">14.10</span
                   ><span class="kss-nav__name">Textarea</span>
                 </a>
               </li>
@@ -357,13 +351,18 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-timeline-navigation.html">
+          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Timeline navigation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-top-image.html">
-          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Top image</span>
+          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Top image</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Typography</span>
+          <span class="kss-nav__ref">45</span><span class="kss-nav__name">Typography</span>
         </a>
       </li>
     </ul>
@@ -428,9 +427,10 @@
     <input type="checkbox" id="cb-example-3" value="">
     <label for="cb-example-3">Unchecked with label</label>
   </div>
-  <div class="checkbox">
+  <div class="checkbox checkbox--with-link">
     <input type="checkbox" id="cb-example-4" value="" checked="checked">
     <label for="cb-example-4">Checked with label</label>
+    <a target="_blank" href="http://ec.europa.eu">including a link</a>
   </div>
 </div>
 
@@ -457,9 +457,10 @@
     &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;cb-example-3&quot; value&#x3D;&quot;&quot;&gt;
     &lt;label for&#x3D;&quot;cb-example-3&quot;&gt;Unchecked with label&lt;/label&gt;
   &lt;/div&gt;
-  &lt;div class&#x3D;&quot;checkbox&quot;&gt;
+  &lt;div class&#x3D;&quot;checkbox checkbox--with-link&quot;&gt;
     &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;cb-example-4&quot; value&#x3D;&quot;&quot; checked&#x3D;&quot;checked&quot;&gt;
     &lt;label for&#x3D;&quot;cb-example-4&quot;&gt;Checked with label&lt;/label&gt;
+    &lt;a target&#x3D;&quot;_blank&quot; href&#x3D;&quot;http://ec.europa.eu&quot;&gt;including a link&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;
 
@@ -472,54 +473,13 @@
           </div>
 
     </section>
-    <section id="kssref-form-feedback-message" class="kss-section kss-section--depth-2">
-
-      <div class="kss-style">
-        <h2 class="kss-title kss-title--level-2">
-          <a class="kss-title__permalink" href="#kssref-form-feedback-message">
-            <span class="kss-title__ref">
-              14.2
-              <span class="kss-title__permalink-hash">
-                  #form.feedback-message
-              </span>
-            </span>
-            Feedback message
-          </a>
-        </h2>
-
-
-      </div>
-
-        <div class="kss-modifier__wrapper">
-          <div class="kss-modifier__heading kss-style">
-            Example
-          </div>
-
-          <div class="kss-modifier__example">
-            <div class="feedback-message is-error">
-  <h3>Some feedback message</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam urna, elementum eget ultrices non, efficitur quis lectus. Donec mollis felis ac felis tempus mattis</p>
-</div>
-
-          </div>
-
-        </div>
-          <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;feedback-message is-error&quot;&gt;
-  &lt;h3&gt;Some feedback message&lt;/h3&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quam urna, elementum eget ultrices non, efficitur quis lectus. Donec mollis felis ac felis tempus mattis&lt;/p&gt;
-&lt;/div&gt;
-</code></pre>
-          </div>
-
-    </section>
     <section id="kssref-form-file-upload" class="kss-section kss-section--depth-2">
 
       <div class="kss-style">
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-form-file-upload">
             <span class="kss-title__ref">
-              14.3
+              14.2
               <span class="kss-title__permalink-hash">
                   #form.file-upload
               </span>
@@ -656,7 +616,7 @@
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-form-form-group">
             <span class="kss-title__ref">
-              14.4
+              14.3
               <span class="kss-title__permalink-hash">
                   #form.form-group
               </span>
@@ -674,25 +634,297 @@
           </div>
 
           <div class="kss-modifier__example">
-            <form>
-  <div class="form-group">
-    <label for="field-ID-1">Default Field</label>
-    <p class="help-block">This is some placeholder help text.</p>
-    <input type="text" name="field-name-1" id="field-ID-1" class="form-control" placeholder="Some placeholder text."/>
-  </div>
-</form>
+            <div class="form-group">
+  <form>
+    <fieldset>
+      <legend>A group of fields:</legend>
+      <div class="form-group europa-textfield">
+        <label for="field-ID-1">A text field:</label>
+        <input type="text" name="field-name-1" id="field-ID-1" class="form-control" placeholder="Some placeholder text."/>
+        <p class="help-block">This is some placeholder help text.</p>
+      </div>
+
+      <div class="form-group">
+      <label class="control-label">Radios:</label>
+        <div class="radio europa-radio">
+          <input type="radio" id="rd-example-1" value="">
+          <label for="rd-example-1">Unchecked multiple option 1</label>
+        </div>
+        <div class="radio europa-radio">
+          <input type="radio" id="rd-example-2" value="" checked="checked">
+          <label for="rd-example-2">Checked multiple option 2</label>
+        </div>
+        <div class="radio europa-radio">
+          <input type="radio" id="rd-example-3" value="" checked="checked">
+          <label for="rd-example-3">Checked multiple option 3</label>
+        </div>
+        <div class="messages messages--form status">
+          <p>Some feedback message</p>
+        </div>
+        <p class="help-block">This is some placeholder help text. </p>
+      </div>
+
+      <div class="form-group europa-select">
+        <label for="example-select-id-uno">And a select:</label>
+        <div class="form-select">
+          <select class="form-control " id="example-select-id-uno">
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+            <option>option 4</option>
+            <option>option 5</option>
+            <option>option 6</option>
+          </select>
+          <p class="help-block">This is some placeholder help text. </p>
+        </div>
+      </div>
+      
+      <fieldset name="a_first_subgroup">
+        <legend>A first subgroup:</legend>
+
+        <div class="form-group europa-textfield">
+          <label for="field-ID-1" class="error">
+            A text field:
+            <span class="form-required text-danger" title="This field is required.">*</span>
+          </label>
+          <input type="text" name="field-name-1" id="field-ID-1" class="form-control error" placeholder="Some placeholder text."/>
+          <div class="messages messages--form messages--error">
+            <a href="#" class="close" data-dismiss="alert">×</a>
+            <p>Lorem ipsum lor sit amet, consectetur adipi, Lorem ipsum lor sit amet, consectetur adipi, Lorem ipsum lor sit amet, consectetur adipi Lorem ipsum lor sit amet, consectetur adipi</p>
+          </div>
+          <p class="help-block">This is some placeholder help text. </p>
+        </div>
+
+        <div class="form-group europa-textfield">
+          <label for="field-ID-2">A text field with an insanely long label that will not fit into a single line:</label>
+          <input type="text" name="field-name-3" id="field-ID-2" class="form-control" placeholder="Some placeholder text."/>
+          <p class="help-block">This is some placeholder help text. is is some placeholder help text. is is some placeholder help text.
+          is is some placeholder help text. is is some placeholder help text.</p>
+        </div>
+
+        <div class="form-group europa-textarea">
+          <label class="control-label" for="field_textarea_demo">A Textarea: <span class="form-required text-danger" title="This field is required.">*</span></label>
+          <textarea class="text-full form-control form-textarea required" name="field_textarea_demo" cols="60" rows="5"></textarea>
+          <p class="help-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dui nisl. Donec imperdiet ut leo vel porttitor. Quisque vehicula felis a commodo vehicula. Nulla sed risus lorem</p>
+        </div>
+      </fieldset>
+
+      <fieldset name="a_second_subgroup">
+        <legend>A second subgroup:</legend>
+        
+        <div class="form-group europa-textfield">
+          <label for="field-ID-1">
+            A text field:
+            <span class="form-required text-danger" title="This field is required.">*</span>
+          </label>
+          <input type="text" name="field-name-1" id="field-ID-1" class="form-control" placeholder="Some placeholder text."/>
+          <p class="help-block">This is some placeholder help text. </p>
+        </div>
+          
+        <div class="form-group europa-file">
+          <div class="file-upload">
+            <div class="input-group">
+             <label class="control-label" for="field_textarea_demo">A file upload: 
+              <span class="form-required text-danger" title="This field is required.">*</span>
+             </label>
+              <div class="form-control file-upload__input" tabindex="0">
+                <span class="file-upload__message">No file selected.</span>
+              </div>
+              <span class="input-group-btn">
+                <label class="btn btn-default file-upload__label" for="field-name-1" tabindex="1">Browse</label>
+                <button class="btn btn-primary" type="submit" tabindex="2">Upload</button>
+              </span>
+            </div>
+            <input type="file" id="field-name-1">
+            <div class="messages messages--form status">
+              <a href="#" class="close" data-dismiss="alert">×</a>
+              <p>A short status message.</p>
+            </div>
+            <p class="help-block">
+              Files must be less than <strong>120 KB</strong>.<br>
+              Allowed file types: <strong>txt pdf</strong>.
+            </p>
+          </div>
+        </div>
+  
+        <div class="form-group europa-textfield">
+          <label for="field-ID-2">A text field:</label>
+          <input type="text" name="field-name-3" id="field-ID-2" class="form-control" placeholder="Some placeholder text."/>
+          <p class="help-block">This is some placeholder help text. is is some placeholder help text. is is some placeholder help text.
+          is is some placeholder help text. is is some placeholder help text.</p>
+        </div>
+      </fieldset>
+
+      <div class="checkbox europa-checkbox">
+        <input type="checkbox" id="example-1" value="" onchange="form.additional_info.style.display = 'block'">
+        <label for="example-1">Click this checkbox to get additional fields:</label>
+        <p class="help-block">This is some placeholder help text. </p>
+      </div>
+    </fieldset>
+    <fieldset name="additional_info" hidden>
+      <legend>Another fieldset:</legend>
+      <div class="form-group europa-textfield">
+        <label for="field-ID-2">A text field:</label>
+        <input type="text" name="field-name-3" id="field-ID-3" class="form-control" placeholder="Some placeholder text."/>
+        <p class="help-block">This is some placeholder help text.</p>
+      </div>
+
+      <div class="form-group europa-textfield">
+        <label for="field-ID-3">A text field:</label>
+        <input type="text" name="field-name-3" id="field-ID-3" class="form-control" placeholder="Some placeholder text."/>
+        <p class="help-block">This is some placeholder help text.</p>
+      </div>
+    </fieldset>
+  </form>
+</div>
 
           </div>
 
         </div>
           <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;form&gt;
-  &lt;div class&#x3D;&quot;form-group&quot;&gt;
-    &lt;label for&#x3D;&quot;field-ID-1&quot;&gt;Default Field&lt;/label&gt;
-    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
-    &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-1&quot; id&#x3D;&quot;field-ID-1&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
-  &lt;/div&gt;
-&lt;/form&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;form-group&quot;&gt;
+  &lt;form&gt;
+    &lt;fieldset&gt;
+      &lt;legend&gt;A group of fields:&lt;/legend&gt;
+      &lt;div class&#x3D;&quot;form-group europa-textfield&quot;&gt;
+        &lt;label for&#x3D;&quot;field-ID-1&quot;&gt;A text field:&lt;/label&gt;
+        &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-1&quot; id&#x3D;&quot;field-ID-1&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
+        &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;form-group&quot;&gt;
+      &lt;label class&#x3D;&quot;control-label&quot;&gt;Radios:&lt;/label&gt;
+        &lt;div class&#x3D;&quot;radio europa-radio&quot;&gt;
+          &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;rd-example-1&quot; value&#x3D;&quot;&quot;&gt;
+          &lt;label for&#x3D;&quot;rd-example-1&quot;&gt;Unchecked multiple option 1&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;radio europa-radio&quot;&gt;
+          &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;rd-example-2&quot; value&#x3D;&quot;&quot; checked&#x3D;&quot;checked&quot;&gt;
+          &lt;label for&#x3D;&quot;rd-example-2&quot;&gt;Checked multiple option 2&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;radio europa-radio&quot;&gt;
+          &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;rd-example-3&quot; value&#x3D;&quot;&quot; checked&#x3D;&quot;checked&quot;&gt;
+          &lt;label for&#x3D;&quot;rd-example-3&quot;&gt;Checked multiple option 3&lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class&#x3D;&quot;messages messages--form status&quot;&gt;
+          &lt;p&gt;Some feedback message&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text. &lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;form-group europa-select&quot;&gt;
+        &lt;label for&#x3D;&quot;example-select-id-uno&quot;&gt;And a select:&lt;/label&gt;
+        &lt;div class&#x3D;&quot;form-select&quot;&gt;
+          &lt;select class&#x3D;&quot;form-control &quot; id&#x3D;&quot;example-select-id-uno&quot;&gt;
+            &lt;option&gt;option 1&lt;/option&gt;
+            &lt;option&gt;option 2&lt;/option&gt;
+            &lt;option&gt;option 3&lt;/option&gt;
+            &lt;option&gt;option 4&lt;/option&gt;
+            &lt;option&gt;option 5&lt;/option&gt;
+            &lt;option&gt;option 6&lt;/option&gt;
+          &lt;/select&gt;
+          &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text. &lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;fieldset name&#x3D;&quot;a_first_subgroup&quot;&gt;
+        &lt;legend&gt;A first subgroup:&lt;/legend&gt;
+
+        &lt;div class&#x3D;&quot;form-group europa-textfield&quot;&gt;
+          &lt;label for&#x3D;&quot;field-ID-1&quot; class&#x3D;&quot;error&quot;&gt;
+            A text field:
+            &lt;span class&#x3D;&quot;form-required text-danger&quot; title&#x3D;&quot;This field is required.&quot;&gt;*&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-1&quot; id&#x3D;&quot;field-ID-1&quot; class&#x3D;&quot;form-control error&quot; placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
+          &lt;div class&#x3D;&quot;messages messages--form messages--error&quot;&gt;
+            &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
+            &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi, Lorem ipsum lor sit amet, consectetur adipi, Lorem ipsum lor sit amet, consectetur adipi Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text. &lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group europa-textfield&quot;&gt;
+          &lt;label for&#x3D;&quot;field-ID-2&quot;&gt;A text field with an insanely long label that will not fit into a single line:&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-3&quot; id&#x3D;&quot;field-ID-2&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
+          &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text. is is some placeholder help text. is is some placeholder help text.
+          is is some placeholder help text. is is some placeholder help text.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class&#x3D;&quot;form-group europa-textarea&quot;&gt;
+          &lt;label class&#x3D;&quot;control-label&quot; for&#x3D;&quot;field_textarea_demo&quot;&gt;A Textarea: &lt;span class&#x3D;&quot;form-required text-danger&quot; title&#x3D;&quot;This field is required.&quot;&gt;*&lt;/span&gt;&lt;/label&gt;
+          &lt;textarea class&#x3D;&quot;text-full form-control form-textarea required&quot; name&#x3D;&quot;field_textarea_demo&quot; cols&#x3D;&quot;60&quot; rows&#x3D;&quot;5&quot;&gt;&lt;/textarea&gt;
+          &lt;p class&#x3D;&quot;help-block&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dui nisl. Donec imperdiet ut leo vel porttitor. Quisque vehicula felis a commodo vehicula. Nulla sed risus lorem&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/fieldset&gt;
+
+      &lt;fieldset name&#x3D;&quot;a_second_subgroup&quot;&gt;
+        &lt;legend&gt;A second subgroup:&lt;/legend&gt;
+        
+        &lt;div class&#x3D;&quot;form-group europa-textfield&quot;&gt;
+          &lt;label for&#x3D;&quot;field-ID-1&quot;&gt;
+            A text field:
+            &lt;span class&#x3D;&quot;form-required text-danger&quot; title&#x3D;&quot;This field is required.&quot;&gt;*&lt;/span&gt;
+          &lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-1&quot; id&#x3D;&quot;field-ID-1&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
+          &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text. &lt;/p&gt;
+        &lt;/div&gt;
+          
+        &lt;div class&#x3D;&quot;form-group europa-file&quot;&gt;
+          &lt;div class&#x3D;&quot;file-upload&quot;&gt;
+            &lt;div class&#x3D;&quot;input-group&quot;&gt;
+             &lt;label class&#x3D;&quot;control-label&quot; for&#x3D;&quot;field_textarea_demo&quot;&gt;A file upload: 
+              &lt;span class&#x3D;&quot;form-required text-danger&quot; title&#x3D;&quot;This field is required.&quot;&gt;*&lt;/span&gt;
+             &lt;/label&gt;
+              &lt;div class&#x3D;&quot;form-control file-upload__input&quot; tabindex&#x3D;&quot;0&quot;&gt;
+                &lt;span class&#x3D;&quot;file-upload__message&quot;&gt;No file selected.&lt;/span&gt;
+              &lt;/div&gt;
+              &lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
+                &lt;label class&#x3D;&quot;btn btn-default file-upload__label&quot; for&#x3D;&quot;field-name-1&quot; tabindex&#x3D;&quot;1&quot;&gt;Browse&lt;/label&gt;
+                &lt;button class&#x3D;&quot;btn btn-primary&quot; type&#x3D;&quot;submit&quot; tabindex&#x3D;&quot;2&quot;&gt;Upload&lt;/button&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+            &lt;input type&#x3D;&quot;file&quot; id&#x3D;&quot;field-name-1&quot;&gt;
+            &lt;div class&#x3D;&quot;messages messages--form status&quot;&gt;
+              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
+              &lt;p&gt;A short status message.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;p class&#x3D;&quot;help-block&quot;&gt;
+              Files must be less than &lt;strong&gt;120 KB&lt;/strong&gt;.&lt;br&gt;
+              Allowed file types: &lt;strong&gt;txt pdf&lt;/strong&gt;.
+            &lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+  
+        &lt;div class&#x3D;&quot;form-group europa-textfield&quot;&gt;
+          &lt;label for&#x3D;&quot;field-ID-2&quot;&gt;A text field:&lt;/label&gt;
+          &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-3&quot; id&#x3D;&quot;field-ID-2&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
+          &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text. is is some placeholder help text. is is some placeholder help text.
+          is is some placeholder help text. is is some placeholder help text.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/fieldset&gt;
+
+      &lt;div class&#x3D;&quot;checkbox europa-checkbox&quot;&gt;
+        &lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;example-1&quot; value&#x3D;&quot;&quot; onchange&#x3D;&quot;form.additional_info.style.display &#x3D; &#x27;block&#x27;&quot;&gt;
+        &lt;label for&#x3D;&quot;example-1&quot;&gt;Click this checkbox to get additional fields:&lt;/label&gt;
+        &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text. &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/fieldset&gt;
+    &lt;fieldset name&#x3D;&quot;additional_info&quot; hidden&gt;
+      &lt;legend&gt;Another fieldset:&lt;/legend&gt;
+      &lt;div class&#x3D;&quot;form-group europa-textfield&quot;&gt;
+        &lt;label for&#x3D;&quot;field-ID-2&quot;&gt;A text field:&lt;/label&gt;
+        &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-3&quot; id&#x3D;&quot;field-ID-3&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
+        &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class&#x3D;&quot;form-group europa-textfield&quot;&gt;
+        &lt;label for&#x3D;&quot;field-ID-3&quot;&gt;A text field:&lt;/label&gt;
+        &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-3&quot; id&#x3D;&quot;field-ID-3&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
+        &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/fieldset&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
 </code></pre>
           </div>
 
@@ -703,7 +935,7 @@
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-form-help-block">
             <span class="kss-title__ref">
-              14.5
+              14.4
               <span class="kss-title__permalink-hash">
                   #form.help-block
               </span>
@@ -736,7 +968,7 @@
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-form-label">
             <span class="kss-title__ref">
-              14.6
+              14.5
               <span class="kss-title__permalink-hash">
                   #form.label
               </span>
@@ -755,11 +987,13 @@
 
           <div class="kss-modifier__example">
             <label for="example-input-id">Some Label</label>
+
           </div>
 
         </div>
           <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label for&#x3D;&quot;example-input-id&quot;&gt;Some Label&lt;/label&gt;</code></pre>
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;label for&#x3D;&quot;example-input-id&quot;&gt;Some Label&lt;/label&gt;
+</code></pre>
           </div>
 
     </section>
@@ -769,7 +1003,7 @@
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-form-legend">
             <span class="kss-title__ref">
-              14.7
+              14.6
               <span class="kss-title__permalink-hash">
                   #form.legend
               </span>
@@ -802,7 +1036,7 @@
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-form-radio">
             <span class="kss-title__ref">
-              14.8
+              14.7
               <span class="kss-title__permalink-hash">
                   #form.radio
               </span>
@@ -833,7 +1067,9 @@
     <input type="radio" id="rd-example-3" value="" checked="checked">
     <label for="rd-example-3">Checked multiple option 3</label>
   </div>
-  <p class="form-field-feedback">Some feedback message</p>
+  <div class="messages messages--form messages--error">
+    <p>Some feedback message</p>
+  </div>
 </div>
 
 <script>
@@ -859,7 +1095,9 @@
     &lt;input type&#x3D;&quot;radio&quot; id&#x3D;&quot;rd-example-3&quot; value&#x3D;&quot;&quot; checked&#x3D;&quot;checked&quot;&gt;
     &lt;label for&#x3D;&quot;rd-example-3&quot;&gt;Checked multiple option 3&lt;/label&gt;
   &lt;/div&gt;
-  &lt;p class&#x3D;&quot;form-field-feedback&quot;&gt;Some feedback message&lt;/p&gt;
+  &lt;div class&#x3D;&quot;messages messages--form messages--error&quot;&gt;
+    &lt;p&gt;Some feedback message&lt;/p&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 
 &lt;script&gt;
@@ -877,7 +1115,7 @@
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-form-select">
             <span class="kss-title__ref">
-              14.9
+              14.8
               <span class="kss-title__permalink-hash">
                   #form.select
               </span>
@@ -897,7 +1135,6 @@
           <div class="kss-modifier__example">
             <div class="form-group">
   <label for="example-select-id-">Default</label>
-  <p class="help-block">This is some placeholder help text.</p>
   <div class="form-select">
     <select class="form-control " id="example-select-id-">
       <option>option 1</option>
@@ -908,7 +1145,10 @@
       <option>option 6</option>
     </select>
   </div>
-  <p class="form-field-feedback">Some feedback message</p>
+  <div class="messages messages--form status" class="form-field-feedback">
+    <p>Some feedback message</p>
+  </div>
+  <p class="help-block">This is some placeholder help text.</p>
 </div>
 
           </div>
@@ -922,7 +1162,6 @@
             <div class="kss-modifier__example">
               <div class="form-group">
   <label for="example-select-id-hover">Default</label>
-  <p class="help-block">This is some placeholder help text.</p>
   <div class="form-select">
     <select class="form-control hover" id="example-select-id-hover">
       <option>option 1</option>
@@ -933,7 +1172,10 @@
       <option>option 6</option>
     </select>
   </div>
-  <p class="form-field-feedback">Some feedback message</p>
+  <div class="messages messages--form status" class="form-field-feedback">
+    <p>Some feedback message</p>
+  </div>
+  <p class="help-block">This is some placeholder help text.</p>
 </div>
 
             </div>
@@ -946,7 +1188,6 @@
             <div class="kss-modifier__example">
               <div class="form-group">
   <label for="example-select-id-pseudo-class-focus">Default</label>
-  <p class="help-block">This is some placeholder help text.</p>
   <div class="form-select">
     <select class="form-control pseudo-class-focus" id="example-select-id-pseudo-class-focus">
       <option>option 1</option>
@@ -957,7 +1198,10 @@
       <option>option 6</option>
     </select>
   </div>
-  <p class="form-field-feedback">Some feedback message</p>
+  <div class="messages messages--form status" class="form-field-feedback">
+    <p>Some feedback message</p>
+  </div>
+  <p class="help-block">This is some placeholder help text.</p>
 </div>
 
             </div>
@@ -970,7 +1214,6 @@
             <div class="kss-modifier__example">
               <div class="form-group">
   <label for="example-select-id-is-down">Default</label>
-  <p class="help-block">This is some placeholder help text.</p>
   <div class="form-select">
     <select class="form-control is-down" id="example-select-id-is-down">
       <option>option 1</option>
@@ -981,7 +1224,10 @@
       <option>option 6</option>
     </select>
   </div>
-  <p class="form-field-feedback">Some feedback message</p>
+  <div class="messages messages--form status" class="form-field-feedback">
+    <p>Some feedback message</p>
+  </div>
+  <p class="help-block">This is some placeholder help text.</p>
 </div>
 
             </div>
@@ -989,7 +1235,6 @@
           <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;form-group&quot;&gt;
   &lt;label for&#x3D;&quot;example-select-id-[modifier class]&quot;&gt;Default&lt;/label&gt;
-  &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
   &lt;div class&#x3D;&quot;form-select&quot;&gt;
     &lt;select class&#x3D;&quot;form-control [modifier class]&quot; id&#x3D;&quot;example-select-id-[modifier class]&quot;&gt;
       &lt;option&gt;option 1&lt;/option&gt;
@@ -1000,7 +1245,10 @@
       &lt;option&gt;option 6&lt;/option&gt;
     &lt;/select&gt;
   &lt;/div&gt;
-  &lt;p class&#x3D;&quot;form-field-feedback&quot;&gt;Some feedback message&lt;/p&gt;
+  &lt;div class&#x3D;&quot;messages messages--form status&quot; class&#x3D;&quot;form-field-feedback&quot;&gt;
+    &lt;p&gt;Some feedback message&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
 &lt;/div&gt;
 </code></pre>
           </div>
@@ -1012,7 +1260,7 @@
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-form-text-input">
             <span class="kss-title__ref">
-              14.10
+              14.9
               <span class="kss-title__permalink-hash">
                   #form.text-input
               </span>
@@ -1033,30 +1281,31 @@
             <form>
   <div class="form-group">
     <label for="example-input-id-1">Text Input - default with placeholder</label>
-    <p class="help-block">This is some help text.</p>
     <input type="text" class="form-control" id="example-input-id-1" placeholder="Some placeholder text."/>
+    <p class="help-block">This is some help text.</p>
   </div>
 
   <div class="form-group focus">
     <label for="example-input-id-2">Text Input - active + focus</label>
-    <p class="help-block">This is some placeholder help text.</p>
     <input type="text" name="field-name-3" id="example-input-id-2" class="form-control is-focused"
            value="Some entered text"/>
+    <div class="messages messages--form status alert"><p>Some feedback message</p></div>
+    <p class="help-block">This is some placeholder help text.</p>
   </div>
 
   <div class="form-group is-disabled">
     <label for="example-input-id-3">Text Input - disabled</label>
-    <p class="help-block">This is some placeholder help text.</p>
     <input type="text" name="field-name-2" id="example-input-id-3" class="form-control" disabled
            placeholder="Some placeholder text."/>
+    <p class="help-block">This is some placeholder help text.</p>
   </div>
 
   <div class="form-group has-error">
-    <label for="example-input-id-4">Text Input - error on a field</label>
-    <p class="help-block">This is some placeholder help text.</p>
+    <label for="example-input-id-4" class="error">Text Input - error on a field</label>
     <input type="text" name="field-name-4" id="example-input-id-4" class="form-control has-error"
            placeholder="Some placeholder text."/>
-    <p class="form-field-feedback">Some feedback message</p>
+    <div class="messages messages--form messages--error alert"><p>Some error message</p></div>
+    <p class="help-block">This is some placeholder help text.</p>
   </div>
 </form>
 
@@ -1067,30 +1316,31 @@
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;form&gt;
   &lt;div class&#x3D;&quot;form-group&quot;&gt;
     &lt;label for&#x3D;&quot;example-input-id-1&quot;&gt;Text Input - default with placeholder&lt;/label&gt;
-    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some help text.&lt;/p&gt;
     &lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; id&#x3D;&quot;example-input-id-1&quot; placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
+    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some help text.&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div class&#x3D;&quot;form-group focus&quot;&gt;
     &lt;label for&#x3D;&quot;example-input-id-2&quot;&gt;Text Input - active + focus&lt;/label&gt;
-    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
     &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-3&quot; id&#x3D;&quot;example-input-id-2&quot; class&#x3D;&quot;form-control is-focused&quot;
            value&#x3D;&quot;Some entered text&quot;/&gt;
+    &lt;div class&#x3D;&quot;messages messages--form status alert&quot;&gt;&lt;p&gt;Some feedback message&lt;/p&gt;&lt;/div&gt;
+    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div class&#x3D;&quot;form-group is-disabled&quot;&gt;
     &lt;label for&#x3D;&quot;example-input-id-3&quot;&gt;Text Input - disabled&lt;/label&gt;
-    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
     &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-2&quot; id&#x3D;&quot;example-input-id-3&quot; class&#x3D;&quot;form-control&quot; disabled
            placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
+    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
   &lt;/div&gt;
 
   &lt;div class&#x3D;&quot;form-group has-error&quot;&gt;
-    &lt;label for&#x3D;&quot;example-input-id-4&quot;&gt;Text Input - error on a field&lt;/label&gt;
-    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
+    &lt;label for&#x3D;&quot;example-input-id-4&quot; class&#x3D;&quot;error&quot;&gt;Text Input - error on a field&lt;/label&gt;
     &lt;input type&#x3D;&quot;text&quot; name&#x3D;&quot;field-name-4&quot; id&#x3D;&quot;example-input-id-4&quot; class&#x3D;&quot;form-control has-error&quot;
            placeholder&#x3D;&quot;Some placeholder text.&quot;/&gt;
-    &lt;p class&#x3D;&quot;form-field-feedback&quot;&gt;Some feedback message&lt;/p&gt;
+    &lt;div class&#x3D;&quot;messages messages--form messages--error alert&quot;&gt;&lt;p&gt;Some error message&lt;/p&gt;&lt;/div&gt;
+    &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/form&gt;
 </code></pre>
@@ -1103,7 +1353,7 @@
         <h2 class="kss-title kss-title--level-2">
           <a class="kss-title__permalink" href="#kssref-form-textarea">
             <span class="kss-title__ref">
-              14.11
+              14.10
               <span class="kss-title__permalink-hash">
                   #form.textarea
               </span>
@@ -1123,18 +1373,17 @@
           <div class="kss-modifier__example">
             <div class="form-group">
   <label for="field-ID-1">Field label</label>
-  <p class="help-block">This is some placeholder help text.</p>
   <textarea name="field-name" id="field-ID-1" rows="4" class="form-textarea form-control"></textarea>
+  <p class="help-block">This is some placeholder help text.</p>
 </div>
 
 <div class="form-group">
-  <label for="field-ID-2">Field label - error</label>
-  <p class="help-block">This is some placeholder help text.</p>
+  <label for="field-ID-2" class="error">Field label - error</label>
   <textarea name="field-name" id="field-ID-2" rows="4" class="form-control form-textarea error"></textarea>
-  <div class="messages error">
-    <h3><span class="sr-only">Error message: </span>Some feedback title</h3>
+  <div class="messages messages--form messages--error">
     <p>Some feedback message</p>
   </div>
+  <p class="help-block">This is some placeholder help text.</p>
 </div>
 
           </div>
@@ -1143,18 +1392,17 @@
           <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;form-group&quot;&gt;
   &lt;label for&#x3D;&quot;field-ID-1&quot;&gt;Field label&lt;/label&gt;
-  &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
   &lt;textarea name&#x3D;&quot;field-name&quot; id&#x3D;&quot;field-ID-1&quot; rows&#x3D;&quot;4&quot; class&#x3D;&quot;form-textarea form-control&quot;&gt;&lt;/textarea&gt;
+  &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
 &lt;/div&gt;
 
 &lt;div class&#x3D;&quot;form-group&quot;&gt;
-  &lt;label for&#x3D;&quot;field-ID-2&quot;&gt;Field label - error&lt;/label&gt;
-  &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
+  &lt;label for&#x3D;&quot;field-ID-2&quot; class&#x3D;&quot;error&quot;&gt;Field label - error&lt;/label&gt;
   &lt;textarea name&#x3D;&quot;field-name&quot; id&#x3D;&quot;field-ID-2&quot; rows&#x3D;&quot;4&quot; class&#x3D;&quot;form-control form-textarea error&quot;&gt;&lt;/textarea&gt;
-  &lt;div class&#x3D;&quot;messages error&quot;&gt;
-    &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Error message: &lt;/span&gt;Some feedback title&lt;/h3&gt;
+  &lt;div class&#x3D;&quot;messages messages--form messages--error&quot;&gt;
     &lt;p&gt;Some feedback message&lt;/p&gt;
   &lt;/div&gt;
+  &lt;p class&#x3D;&quot;help-block&quot;&gt;This is some placeholder help text.&lt;/p&gt;
 &lt;/div&gt;
 </code></pre>
           </div>

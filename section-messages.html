@@ -38,11 +38,11 @@
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
 <script src="public/js/components/filters.js"></script>
-<script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
 <script src="public/js/components/transition.js"></script>
 <script src="public/js/components/inpage_nav.js"></script>
+<script src="public/js/libraries/superclamp.min.js"></script>
 <script src="public/js/europa.js"></script>
 
   <script src="kss-assets/kss.js"></script>
@@ -289,13 +289,18 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-timeline-navigation.html">
+          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Timeline navigation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-top-image.html">
-          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Top image</span>
+          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Top image</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Typography</span>
+          <span class="kss-nav__ref">45</span><span class="kss-nav__name">Typography</span>
         </a>
       </li>
     </ul>
@@ -342,54 +347,37 @@ for events.</p>
           </div>
 
           <div class="kss-modifier__example">
-            <div class="messages info alert">
+            <div class="messages info alert ">
   <a href="#" class="close" data-dismiss="alert">×</a>
-  <h3><span class="sr-only">Info message: </span>Some info title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
-<div class="messages info alert ">
-  <a href="#" class="close" data-dismiss="alert">×</a>
-  <h3><span class="sr-only">Info message: </span>Some info title</h3>
-</div>
-
-<div class="messages warning alert">
+<div class="messages warning alert ">
   <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
-<div class="messages status alert">
+<div class="messages status alert ">
   <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Status message: </span>Some status title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
-<div class="messages error alert">
+<div class="messages error alert messages--error ">
   <a href="#" class="close" data-dismiss="alert">×</a>
-  <h3><span class="sr-only">Error message: </span>Some error title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
-<div class="messages live alert">
+<div class="messages live alert ">
   <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Live streaming message: </span>Some livestream title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
-<div class="messages info alert">
-  <a href="#" class="close" data-dismiss="alert">×</a>
-  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
-</div>
-
-<div class="messages warning alert">
+<div class="messages warning alert ">
   <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
-</div>
-
-<div class="messages status">
-  <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
-  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
           </div>
@@ -401,107 +389,114 @@ for events.</p>
               Centralized icon
             </div>
             <div class="kss-modifier__example">
-              <div class="messages info alert">
+              <div class="messages info alert messages--icon-center">
   <a href="#" class="close" data-dismiss="alert">×</a>
-  <h3><span class="sr-only">Info message: </span>Some info title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
-<div class="messages info alert messages--icon-center">
-  <a href="#" class="close" data-dismiss="alert">×</a>
-  <h3><span class="sr-only">Info message: </span>Some info title</h3>
-</div>
-
-<div class="messages warning alert">
+<div class="messages warning alert messages--icon-center">
   <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
-<div class="messages status alert">
+<div class="messages status alert messages--icon-center">
   <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Status message: </span>Some status title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
-<div class="messages error alert">
+<div class="messages error alert messages--error messages--icon-center">
   <a href="#" class="close" data-dismiss="alert">×</a>
-  <h3><span class="sr-only">Error message: </span>Some error title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
-<div class="messages live alert">
+<div class="messages live alert messages--icon-center">
   <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Live streaming message: </span>Some livestream title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
 </div>
 
-<div class="messages info alert">
-  <a href="#" class="close" data-dismiss="alert">×</a>
-  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
-</div>
-
-<div class="messages warning alert">
+<div class="messages warning alert messages--icon-center">
   <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
 </div>
 
-<div class="messages status">
+            </div>
+            <div class="kss-modifier__name kss-style">
+              messages--form
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Messages used in custom forms
+            </div>
+            <div class="kss-modifier__example">
+              <div class="messages info alert messages--form">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+<div class="messages warning alert messages--form">
+  <a href="#" class="close" data-dismiss="alert">×</a>
   <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
   <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+<div class="messages status alert messages--form">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <h3><span class="sr-only">Status message: </span>Some status title</h3>
+  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+<div class="messages error alert messages--error messages--form">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+<div class="messages live alert messages--form">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <h3><span class="sr-only">Live streaming message: </span>Some livestream title</h3>
+  <p>Lorem ipsum lor sit amet, consectetur adipi</p>
+</div>
+
+<div class="messages warning alert messages--form">
+  <a href="#" class="close" data-dismiss="alert">×</a>
+  <h3><span class="sr-only">Warning message: </span>Some warning title</h3>
 </div>
 
             </div>
         </div>
           <div class="kss-markup kss-style">
-            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;messages info alert&quot;&gt;
+            <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;div class&#x3D;&quot;messages info alert [modifier class]&quot;&gt;
   &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
-  &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Info message: &lt;/span&gt;Some info title&lt;/h3&gt;
   &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class&#x3D;&quot;messages info alert [modifier class]&quot;&gt;
-  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
-  &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Info message: &lt;/span&gt;Some info title&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div class&#x3D;&quot;messages warning alert&quot;&gt;
+&lt;div class&#x3D;&quot;messages warning alert [modifier class]&quot;&gt;
   &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
   &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Warning message: &lt;/span&gt;Some warning title&lt;/h3&gt;
   &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class&#x3D;&quot;messages status alert&quot;&gt;
+&lt;div class&#x3D;&quot;messages status alert [modifier class]&quot;&gt;
   &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
   &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Status message: &lt;/span&gt;Some status title&lt;/h3&gt;
   &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class&#x3D;&quot;messages error alert&quot;&gt;
+&lt;div class&#x3D;&quot;messages error alert messages--error [modifier class]&quot;&gt;
   &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
-  &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Error message: &lt;/span&gt;Some error title&lt;/h3&gt;
   &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class&#x3D;&quot;messages live alert&quot;&gt;
+&lt;div class&#x3D;&quot;messages live alert [modifier class]&quot;&gt;
   &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
   &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Live streaming message: &lt;/span&gt;Some livestream title&lt;/h3&gt;
   &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;div class&#x3D;&quot;messages info alert&quot;&gt;
-  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
-  &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class&#x3D;&quot;messages warning alert&quot;&gt;
+&lt;div class&#x3D;&quot;messages warning alert [modifier class]&quot;&gt;
   &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;close&quot; data-dismiss&#x3D;&quot;alert&quot;&gt;×&lt;/a&gt;
   &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Warning message: &lt;/span&gt;Some warning title&lt;/h3&gt;
-&lt;/div&gt;
-
-&lt;div class&#x3D;&quot;messages status&quot;&gt;
-  &lt;h3&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Warning message: &lt;/span&gt;Some warning title&lt;/h3&gt;
-  &lt;p&gt;Lorem ipsum lor sit amet, consectetur adipi&lt;/p&gt;
 &lt;/div&gt;
 </code></pre>
           </div>

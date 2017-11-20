@@ -38,11 +38,11 @@
 <script src="public/js/components/lang-switcher.js"></script>
 <script src="public/js/components/lang-select-site.js"></script>
 <script src="public/js/components/filters.js"></script>
-<script src="public/js/components/file.js"></script>
 <script src="public/js/components/breadcrumb.js"></script>
 <script src="public/js/components/collapse.js"></script>
 <script src="public/js/components/transition.js"></script>
 <script src="public/js/components/inpage_nav.js"></script>
+<script src="public/js/libraries/superclamp.min.js"></script>
 <script src="public/js/europa.js"></script>
 
   <script src="kss-assets/kss.js"></script>
@@ -289,13 +289,18 @@
         </a>
       </li>
       <li class="kss-nav__menu-item">
+        <a class="kss-nav__menu-link" href="section-timeline-navigation.html">
+          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Timeline navigation</span>
+        </a>
+      </li>
+      <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-top-image.html">
-          <span class="kss-nav__ref">43</span><span class="kss-nav__name">Top image</span>
+          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Top image</span>
         </a>
       </li>
       <li class="kss-nav__menu-item">
         <a class="kss-nav__menu-link" href="section-typography.html">
-          <span class="kss-nav__ref">44</span><span class="kss-nav__name">Typography</span>
+          <span class="kss-nav__ref">45</span><span class="kss-nav__name">Typography</span>
         </a>
       </li>
     </ul>
@@ -328,41 +333,37 @@
 
           <div class="kss-modifier__example">
             <span class="label ">Label content</span>
-<span class="label  label--upper">Label in upper case</span>
 
           </div>
 
             <div class="kss-modifier__name kss-style">
-              .label--default
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Default
-            </div>
-            <div class="kss-modifier__example">
-              <span class="label label--default">Label content</span>
-<span class="label label--default label--upper">Label in upper case</span>
-
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .label--status
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Status
-            </div>
-            <div class="kss-modifier__example">
-              <span class="label label--status">Label content</span>
-<span class="label label--status label--upper">Label in upper case</span>
-
-            </div>
-            <div class="kss-modifier__name kss-style">
               .label--highlight
             </div>
             <div class="kss-modifier__description kss-style">
-              Highlight
+              Status open
             </div>
             <div class="kss-modifier__example">
               <span class="label label--highlight">Label content</span>
-<span class="label label--highlight label--upper">Label in upper case</span>
+
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .label--status-closed
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Status closed
+            </div>
+            <div class="kss-modifier__example">
+              <span class="label label--status-closed">Label content</span>
+
+            </div>
+            <div class="kss-modifier__name kss-style">
+              .label--status-upcoming
+            </div>
+            <div class="kss-modifier__description kss-style">
+              Status upcoming
+            </div>
+            <div class="kss-modifier__example">
+              <span class="label label--status-upcoming">Label content</span>
 
             </div>
             <div class="kss-modifier__name kss-style">
@@ -373,79 +374,51 @@
             </div>
             <div class="kss-modifier__example">
               <span class="label label--meta">Label content</span>
-<span class="label label--meta label--upper">Label in upper case</span>
 
             </div>
             <div class="kss-modifier__name kss-style">
-              .label--upper
+              .label--meta-medium
             </div>
             <div class="kss-modifier__description kss-style">
-              Uppercase label
+              Meta medium
             </div>
             <div class="kss-modifier__example">
-              <span class="label label--upper">Label content</span>
-<span class="label label--upper label--upper">Label in upper case</span>
+              <span class="label label--meta-medium">Label content</span>
 
             </div>
             <div class="kss-modifier__name kss-style">
-              .label--primary
+              .label--high
             </div>
             <div class="kss-modifier__description kss-style">
-              Primary
+              Meta high
             </div>
             <div class="kss-modifier__example">
-              <span class="label label--primary">Label content</span>
-<span class="label label--primary label--upper">Label in upper case</span>
+              <span class="label label--high">Label content</span>
 
             </div>
             <div class="kss-modifier__name kss-style">
-              .label--success
+              .label--status
             </div>
             <div class="kss-modifier__description kss-style">
-              Success
+              Status
             </div>
             <div class="kss-modifier__example">
-              <span class="label label--success">Label content</span>
-<span class="label label--success label--upper">Label in upper case</span>
+              <span class="label label--status">Label content</span>
 
             </div>
             <div class="kss-modifier__name kss-style">
-              .label--info
+              .label--next
             </div>
             <div class="kss-modifier__description kss-style">
-              Info
+              Next
             </div>
             <div class="kss-modifier__example">
-              <span class="label label--info">Label content</span>
-<span class="label label--info label--upper">Label in upper case</span>
-
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .label--warning
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Warning
-            </div>
-            <div class="kss-modifier__example">
-              <span class="label label--warning">Label content</span>
-<span class="label label--warning label--upper">Label in upper case</span>
-
-            </div>
-            <div class="kss-modifier__name kss-style">
-              .label--danger
-            </div>
-            <div class="kss-modifier__description kss-style">
-              Danger
-            </div>
-            <div class="kss-modifier__example">
-              <span class="label label--danger">Label content</span>
-<span class="label label--danger label--upper">Label in upper case</span>
+              <span class="label label--next">Label content</span>
 
             </div>
         </div>
           <div class="kss-markup kss-style">
             <pre class="prettyprint linenums lang-html"><code data-language="html">&lt;span class&#x3D;&quot;label [modifier class]&quot;&gt;Label content&lt;/span&gt;
-&lt;span class&#x3D;&quot;label [modifier class] label--upper&quot;&gt;Label in upper case&lt;/span&gt;
 </code></pre>
           </div>
 
